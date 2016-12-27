@@ -1,0 +1,232 @@
+@import url(../fonts/calibri/font.css);
+/* COLOR */
+/* line 24, D:/xampp/htdocs/bs/sass/_define.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, D:/xampp/htdocs/bs/sass/_define.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 26, D:/xampp/htdocs/bs/sass/_define.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 27, D:/xampp/htdocs/bs/sass/_define.scss */
+body {
+  font-family: 'Calibri';
+}
+
+/* line 29, D:/xampp/htdocs/bs/sass/_define.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 33, D:/xampp/htdocs/bs/sass/_define.scss */
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+/* line 34, D:/xampp/htdocs/bs/sass/_define.scss */
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 36, D:/xampp/htdocs/bs/sass/_define.scss */
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 3rem 3rem 0;
+}
+
+/* line 40, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header {
+  position: relative;
+}
+
+/* line 42, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header a.logo {
+  float: left;
+}
+
+/* line 45, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header button.btn-wrap-menu {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background: none;
+  border: none;
+}
+
+/* line 51, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header button.btn-wrap-menu span.text-menu {
+  font-size: 1.8rem;
+  font-family: 'Calibri';
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* line 59, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header button.btn-wrap-menu span.icon-bar {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2px;
+  width: 30px;
+  border-radius: 3px;
+  background: white;
+  position: relative;
+  margin-left: 20px;
+}
+
+/* line 68, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header button.btn-wrap-menu span.icon-bar:before, .header .wrap-header button.btn-wrap-menu span.icon-bar:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  border-radius: 3px;
+  background: white;
+  left: 0;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* line 82, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header button.btn-wrap-menu span.icon-bar:before {
+  top: -10px;
+}
+
+/* line 85, D:/xampp/htdocs/bs/sass/_define.scss */
+.header .wrap-header button.btn-wrap-menu span.icon-bar:after {
+  bottom: -10px;
+}
+
+/* line 92, D:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(153, 204, 51, 0.9);
+  opacity: 0;
+  z-index: -1;
+}
+
+/* line 3, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 {
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  background: url("../images/bg-section01.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 9, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+/* line 13, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center .v-center {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 19, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center img.ic-tenyear {
+  margin: 0 auto 6rem;
+}
+
+/* line 22, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center a.readmore {
+  font-size: 1.5rem;
+  padding: 6px 25px;
+  color: #00b3d8;
+  border-radius: 20px;
+  border: 1px solid #00b3d8;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* line 30, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center a.readmore:hover {
+  background: #00b3d8;
+  color: white;
+}
+
+/* line 35, D:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center i.ic-scrolldown {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  display: block;
+  width: 27px;
+  height: 42px;
+  background: url("../images/ic-scrolldown.png") no-repeat;
+  animation: ani-btn 2s linear 0.8s infinite alternate;
+  -webkit-animation: ani-btn 2s linear 0.8s infinite alternate;
+  -moz-animation: ani-btn 2s linear 0.8s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes ani-btn {
+  0% {
+    bottom: 15%;
+  }
+  50% {
+    bottom: 14%;
+  }
+  100% {
+    bottom: 15%;
+  }
+}
+
+@-webkit-keyframes ani-btn {
+  0% {
+    bottom: 15%;
+  }
+  50% {
+    bottom: 14%;
+  }
+  100% {
+    bottom: 15%;
+  }
+}
+
+@-moz-keyframes ani-btn {
+  0% {
+    bottom: 15%;
+  }
+  50% {
+    bottom: 14%;
+  }
+  100% {
+    bottom: 15%;
+  }
+}
