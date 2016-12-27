@@ -1,0 +1,27 @@
+@import "../fonts/calibri/font.css";
+
+@mixin fontbase{
+	font-family: 'Calibri';
+}
+@mixin transition($trans...){
+	transition:$trans;
+	-webkit-transition:$trans;
+	-moz-transition:$trans;
+}
+@mixin media($width:767px){
+	@media screen and (max-width:$width){
+		@content;
+	}
+}
+
+/* COLOR */
+$xanhduong:#009ace;
+$xanhduong2:#00b3d8;
+$text01:#6d6e71;
+
+
+
+*{margin:0; padding:0}
+html, body{width:100%;height:100%;}
+html{font-size:62.5%}
+body{}
