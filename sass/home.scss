@@ -51,15 +51,26 @@
 	}
 }
 .section{
+	position:relative;
 	.title-container{
-		padding:7rem 0;
+		width:100%;
+		height:30rem;
 		text-align:center;
+		div.center{
+			height:100%;
+			width:100%;
+			display:table;
+			div.v-center{
+				display:table-cell;
+				vertical-align:middle;
+			}
+		}
 		h2.title{
+			margin-bottom:4rem;
 			font-size:3.3rem;
 			@include fontbase;
 			font-weight:600;
-			color:$xanhduong2;
-			margin-bottom:4rem;
+			color:$xanhduong;
 			display:inline-block;
 			text-transform:uppercase;
 			vertical-align:baseline;
@@ -68,14 +79,21 @@
 				width:25px;
 				height:25px;
 				background:url('../images/ic-text.png')no-repeat;
-				margin-right:1rem;
 				vertical-align:baseline;
+				&.left{
+					margin-right:1rem; 
+				}
+				&.right{
+					margin-left:1rem; 
+				}
 			}
 		}
 		p.sub-title{
+			max-width:50%;
+			margin:0 auto;
 			font-size:2.8rem;
 			line-height:3.2rem;
-			text-transform:uppercase;
+			text-transform:capitalize;
 			color:$text01;
 			&.margin-bot{
 				margin-bottom:3rem;
@@ -84,12 +102,19 @@
 	}
 }
 #about-section{
+	width:100%;
+	height:100%;
 	.img-container{
+		height:calc(100% - 300px);
+		width:100%;
 		position:relative;
+		.container-float{
+			// position:relative;
+		}
 		.wrap-left{
 			width:60%;
-			min-height:700px;
-			float:left;
+			height:100%;
+			position:absolute;
 			background:url('../images/bg01-section2.jpg')no-repeat;
 			background-size:cover;
 		}
@@ -106,9 +131,220 @@
 		}
 		.right-bottom{
 			bottom:0;
+			#about-swiper{
+				background:$xam;
+				height:100%;
+				position:relative;
+				overflow:hidden;
+				a.link-agency{
+					position:absolute;
+					top:10px;
+					right:10px;
+					color:white;
+					z-index:100;
+					text-transform:capitalize;
+					@include transition(all 0.3s);
+					&:hover{
+						color:$xanhduong2;
+						right:5px;
+					}
+				}
+				.swiper-wrapper{
+					height:100%;
+					.swiper-slide{
+						height:100%;
+						.each-slide{
+							height:100%;
+							.center{
+								display:table;
+								width:100%;
+								height:100%;
+								.v-center{
+									width:100%;
+									height:100%;
+									display:table-cell;
+									vertical-align:middle;
+									text-align:center;
+									color:white;
+									img{
+										margin-bottom:2rem;
+									}
+									h3.title-slide{
+										@include fontbase;
+										font-size:2.6rem;
+										text-transform:uppercase;
+										margin-bottom:0.5rem;
+									}
+									p.sub-slide{
+										@include fontbase;
+										font-size:2rem;
+										color:$xanhduong2;
+
+									}
+								}
+							}
+						}
+					}
+				}
+				.swiper-pagination-bullet{
+					background:transparent;
+					width:12px;
+					height:12px;
+					border:1px solid white;
+					opacity:1;
+					&.swiper-pagination-bullet-active{
+						background:$xanhduong;
+						border-color:transparent;
+					}
+				}
+			}
 		}
 	}
 }
+
+#service-section{
+	height:100%;
+	width:100%;
+	#services{
+		height:30%;
+		min-height:35rem;
+		.container{
+			height:100%;
+			.center{
+				display:table;
+				width:100%;
+				height:100%;
+				.v-center{
+					display:table-cell;
+					height:100%;
+					vertical-align:middle;
+					text-align:center;
+					.wrap-button{
+						span{
+							padding:0 1.5rem;
+							display:inline-block;
+						}
+						a.btn-me{
+							font-size:1.5rem;
+							padding:6px 25px;
+							color:white;
+							background:#079acf;
+							border-radius:20px;
+							border:1px solid transparent;
+							text-transform:uppercase;
+							@include transition(all 0.3s);
+							&:hover{
+								background:transparent;
+								color:$xanhduong;
+								border:1px solid $xanhduong;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#project{
+		height:calc(100% - 35rem);
+		min-height:70%;
+		.project-container{
+			.each-project{
+				text-align:left;
+				img{
+					margin:0 auto 2.2rem;
+				}
+				h2.project-name{
+					font-size:2.4rem;
+					font-weight:bold;
+					@include fontbase;
+					margin-bottom:2rem;
+					color:$text01;
+				}
+				p.description{
+					@include fontbase;
+					font-size:1.6rem;
+					color:$text01;
+					line-height:2rem;
+				}
+			}
+		}
+	}
+	
+}
+
+.background-area{
+	width:100%;
+	height:700px;
+	background:url('../images/bg-section3.jpg')no-repeat;
+	background-size:cover;
+	.center{
+		display:table;
+		height:100%;
+		width:100%;
+		.v-center{
+			display:table-cell;
+			height:100%;
+			width:100%;
+			vertical-align:middle;
+			text-align:center;
+			h2.title{
+				margin-bottom:4rem;
+				font-size:3.3rem;
+				@include fontbase;
+				font-weight:600;
+				color:$xanhduong;
+				display:inline-block;
+				text-transform:uppercase;
+				vertical-align:baseline;
+				i.ic-text{
+					display:inline-block;
+					width:25px;
+					height:25px;
+					background:url('../images/ic-text.png')no-repeat;
+					vertical-align:baseline;
+					&.left{
+						margin-right:1rem; 
+					}
+					&.right{
+						margin-left:1rem; 
+					}
+				}
+			}
+			p.sub-title{
+				max-width:90%;
+				margin:0 auto 4rem;
+				font-size:4rem;
+				font-weight:bold;
+				line-height:4.5rem;
+				text-transform:uppercase;;
+				color:white;
+			}
+			a.readmore{
+				font-size:1.5rem;
+				padding:6px 25px;
+				color:$xanhduong2;
+				border-radius:20px;
+				border:1px solid $xanhduong2;
+				text-transform:uppercase;
+				@include transition(all 0.3s);
+				&:hover{
+					background:$xanhduong2;
+					color:white;
+				}
+			}
+		}
+	}
+}
+.tenyear-footer{
+	padding:6rem 0;
+	width:100%;
+	background:$xanhduong-den;
+	img{
+		margin:0 auto;
+	}
+}
+
+
 
 @keyframes ani-btn{
 	0%{bottom:15%}

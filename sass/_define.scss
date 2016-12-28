@@ -17,6 +17,8 @@
 /* COLOR */
 $xanhduong:#009ace;
 $xanhduong2:#00b3d8;
+$xanhduong-den:#061c32;
+$xam:#58595b;
 $text01:#6d6e71;
 
 
@@ -30,13 +32,14 @@ ul{
 	margin:0;
 	padding:0
 }
-h1,h2,p{margin:0; padding:0; font-size:1.8rem;}
+h1,h2,h3,h4,p{margin:0; padding:0; font-size:1.8rem;}
 a:hover, a:focus{text-decoration:none; outline:none;}
 
 .header{
 	position:absolute;
 	width:100%;
 	padding:3rem 3rem 0;
+	z-index:100;
 	.wrap-header{
 		position:relative;
 		a.logo{
