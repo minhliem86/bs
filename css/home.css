@@ -1,64 +1,64 @@
 @import url(../fonts/calibri/font.css);
 /* COLOR */
-/* line 24, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 24, C:/xampp/htdocs/bs/sass/_define.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 25, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 25, C:/xampp/htdocs/bs/sass/_define.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 26, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 26, C:/xampp/htdocs/bs/sass/_define.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 27, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 27, C:/xampp/htdocs/bs/sass/_define.scss */
 body {
   font-family: 'Calibri';
 }
 
-/* line 29, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 29, C:/xampp/htdocs/bs/sass/_define.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 33, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 33, C:/xampp/htdocs/bs/sass/_define.scss */
 h1, h2, p {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
 }
 
-/* line 34, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 34, C:/xampp/htdocs/bs/sass/_define.scss */
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
 }
 
-/* line 36, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 36, C:/xampp/htdocs/bs/sass/_define.scss */
 .header {
   position: absolute;
   width: 100%;
   padding: 3rem 3rem 0;
 }
 
-/* line 40, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 40, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header {
   position: relative;
 }
 
-/* line 42, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 42, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header a.logo {
   float: left;
 }
 
-/* line 45, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 45, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu {
   position: absolute;
   right: 0;
@@ -67,7 +67,7 @@ a:hover, a:focus {
   border: none;
 }
 
-/* line 51, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 51, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.text-menu {
   font-size: 1.8rem;
   font-family: 'Calibri';
@@ -77,7 +77,7 @@ a:hover, a:focus {
   text-transform: uppercase;
 }
 
-/* line 59, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 59, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar {
   display: inline-block;
   vertical-align: middle;
@@ -89,7 +89,7 @@ a:hover, a:focus {
   margin-left: 20px;
 }
 
-/* line 68, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 68, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar:before, .header .wrap-header button.btn-wrap-menu span.icon-bar:after {
   content: '';
   display: inline-block;
@@ -107,17 +107,17 @@ a:hover, a:focus {
   -moz-transition: all 0.3s;
 }
 
-/* line 82, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 82, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar:before {
   top: -10px;
 }
 
-/* line 85, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 85, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar:after {
   bottom: -10px;
 }
 
-/* line 92, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 92, C:/xampp/htdocs/bs/sass/_define.scss */
 .overlay-menu {
   position: fixed;
   width: 100%;
@@ -129,7 +129,7 @@ a:hover, a:focus {
   z-index: -1;
 }
 
-/* line 3, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 3, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 {
   width: 100%;
   min-height: 500px;
@@ -138,14 +138,14 @@ a:hover, a:focus {
   background-size: cover;
 }
 
-/* line 9, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 9, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 div.center {
   width: 100%;
   height: 100%;
   display: table;
 }
 
-/* line 13, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 13, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 div.center .v-center {
   display: table-cell;
   height: 100%;
@@ -153,12 +153,12 @@ a:hover, a:focus {
   text-align: center;
 }
 
-/* line 19, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 19, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 div.center img.ic-tenyear {
   margin: 0 auto 6rem;
 }
 
-/* line 22, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 22, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 div.center a.readmore {
   font-size: 1.5rem;
   padding: 6px 25px;
@@ -171,13 +171,13 @@ a:hover, a:focus {
   -moz-transition: all 0.3s;
 }
 
-/* line 30, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 30, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 div.center a.readmore:hover {
   background: #00b3d8;
   color: white;
 }
 
-/* line 35, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 35, C:/xampp/htdocs/bs/sass/home.scss */
 .section01 div.center i.ic-scrolldown {
   position: absolute;
   bottom: 15%;
@@ -193,6 +193,81 @@ a:hover, a:focus {
   -webkit-animation: ani-btn 2s linear 0.8s infinite alternate;
   -moz-animation: ani-btn 2s linear 0.8s infinite alternate;
   cursor: pointer;
+}
+
+/* line 54, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+/* line 57, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container h2.title {
+  font-size: 3.3rem;
+  font-family: 'Calibri';
+  font-weight: 600;
+  color: #00b3d8;
+  margin-bottom: 4rem;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+
+/* line 66, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container h2.title i.ic-text {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/ic-text.png") no-repeat;
+  margin-right: 1rem;
+  vertical-align: baseline;
+}
+
+/* line 75, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container p.sub-title {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  color: #6d6e71;
+}
+
+/* line 80, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container p.sub-title.margin-bot {
+  margin-bottom: 3rem;
+}
+
+/* line 87, C:/xampp/htdocs/bs/sass/home.scss */
+#about-section .img-container {
+  position: relative;
+}
+
+/* line 89, C:/xampp/htdocs/bs/sass/home.scss */
+#about-section .img-container .wrap-left {
+  width: 60%;
+  min-height: 700px;
+  float: left;
+  background: url("../images/bg01-section2.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 96, C:/xampp/htdocs/bs/sass/home.scss */
+#about-section .img-container .right-top, #about-section .img-container .right-bottom {
+  position: absolute;
+  height: 50%;
+  width: 40%;
+  right: 0;
+}
+
+/* line 102, C:/xampp/htdocs/bs/sass/home.scss */
+#about-section .img-container .right-top {
+  top: 0;
+  background: url("../images/bg02-section2.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 107, C:/xampp/htdocs/bs/sass/home.scss */
+#about-section .img-container .right-bottom {
+  bottom: 0;
 }
 
 @keyframes ani-btn {

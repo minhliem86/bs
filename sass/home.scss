@@ -47,10 +47,69 @@
 			-webkit-animation:ani-btn 2s linear 0.8s infinite alternate;
 			-moz-animation:ani-btn 2s linear 0.8s infinite alternate;
 			cursor:pointer;
-
 		}
 	}
 }
+.section{
+	.title-container{
+		padding:7rem 0;
+		text-align:center;
+		h2.title{
+			font-size:3.3rem;
+			@include fontbase;
+			font-weight:600;
+			color:$xanhduong2;
+			margin-bottom:4rem;
+			display:inline-block;
+			text-transform:uppercase;
+			vertical-align:baseline;
+			i.ic-text{
+				display:inline-block;
+				width:25px;
+				height:25px;
+				background:url('../images/ic-text.png')no-repeat;
+				margin-right:1rem;
+				vertical-align:baseline;
+			}
+		}
+		p.sub-title{
+			font-size:2.8rem;
+			line-height:3.2rem;
+			text-transform:uppercase;
+			color:$text01;
+			&.margin-bot{
+				margin-bottom:3rem;
+			}
+		}
+	}
+}
+#about-section{
+	.img-container{
+		position:relative;
+		.wrap-left{
+			width:60%;
+			min-height:700px;
+			float:left;
+			background:url('../images/bg01-section2.jpg')no-repeat;
+			background-size:cover;
+		}
+		.right-top, .right-bottom{
+			position:absolute;
+			height:50%;
+			width:40%;
+			right:0;
+		}
+		.right-top{
+			top:0;
+			background:url('../images/bg02-section2.jpg')no-repeat;
+			background-size:cover;
+		}
+		.right-bottom{
+			bottom:0;
+		}
+	}
+}
+
 @keyframes ani-btn{
 	0%{bottom:15%}
 	50%{bottom:14%}
