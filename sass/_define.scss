@@ -1,7 +1,11 @@
-@import "../fonts/calibri/font.css";
+@import "../fonts/gothambook/font.css";
+@import "../fonts/baskvill/font.css";
 
 @mixin fontbase{
-	font-family: 'Calibri';
+	font-family: 'GothamBook';
+}
+@mixin fontbaskvill{
+	font-family: 'Baskerville Old Face';
 }
 @mixin transition($trans...){
 	transition:$trans;
@@ -35,15 +39,27 @@ ul{
 h1,h2,h3,h4,p{margin:0; padding:0; font-size:1.8rem;}
 a:hover, a:focus{text-decoration:none; outline:none;}
 
+div.clear{
+	clear:both;
+}
+.hide-ani{visibility:hidden;opacity:0;}
+.show-ani{visibility:visible}
 .header{
 	position:absolute;
 	width:100%;
 	padding:3rem 3rem 0;
-	z-index:100;
+	z-index:1000;
+	@include media(767px){
+		padding:1.5rem 1.5rem 0;
+	}
 	.wrap-header{
 		position:relative;
 		a.logo{
 			float:left;
+			img{
+				@include transition(all 0.3s);
+
+			}
 		}
 		button.btn-wrap-menu{
 			position:absolute;
@@ -51,13 +67,18 @@ a:hover, a:focus{text-decoration:none; outline:none;}
 			top:10px;
 			background:none;
 			border:none;
+			outline: none;
 			span.text-menu{
 				font-size:1.8rem;
 				@include fontbase;
+				font-weight:bold;
 				color:white;
 				display:inline-block;
 				vertical-align: middle;
 				text-transform: uppercase;
+				@include media(480px){
+					font-size:1.5rem;
+				}
 			}
 			span.icon-bar{
 				display:inline-block;
@@ -68,6 +89,7 @@ a:hover, a:focus{text-decoration:none; outline:none;}
 				background:white;
 				position:relative;
 				margin-left:20px;
+				@include transition(all 0.3s)
 				&:before, &:after{
 					content:'';
 					display:inline-block;
@@ -84,21 +106,265 @@ a:hover, a:focus{text-decoration:none; outline:none;}
 				}
 				&:before{
 					top:-10px;
+
 				}
 				&:after{
 					bottom:-10px;
+
+				}
+			}
+			&.btn-close{
+				span.icon-bar{
+					background:transparent;
+				}
+				span.icon-bar:before{
+					top:0;
+					transform:rotate(45deg);
+					-webkit-transform:rotate(45deg);
+					-moz-transform:rotate(45deg);
+				}
+				span.icon-bar:after{
+					bottom: 0;
+					transform:rotate(135deg);
+					-webkit-transform:rotate(135deg);
+					-moz-transform:rotate(135deg);
 				}
 			}
 		}
 	}
 }
+
+/* FOOTER */
+.footer{
+	padding:4rem 0;
+	img.logo-footer{
+		@include media(767px){
+			margin: 0 auto 1rem;
+		}
+	}
+	ul.list-footer{
+		margin-top:1rem;
+		@include media(991px){
+			display:block;
+			text-align: center;
+			margin-top:0.5rem;
+			margin-bottom:2rem;
+		}
+		@include media(767px){
+			display:block;
+			text-align: center;
+		}
+		li{
+			display:inline-block;
+			margin-right:4rem;
+			&:last-child{
+				margin-right:0;
+			}
+			position:relative;
+			padding-left:25px;
+			&:before{
+				content:'';
+				position:absolute;
+				top:4px;
+				left:0;
+				display:block;
+				width:19px;
+				height:19px;
+				background:url('../images/ic-text-footer.png')no-repeat;
+				@include transition(all 0.3s);
+			}
+			@include media(1199px){
+				margin-right:2.5rem;
+			}
+			@include media(991px){
+				margin-right:2.5rem;
+			}
+			@include media(767px){
+				padding-left:0;
+				margin-right:2rem;
+				&:before{
+					display:none;
+				}
+			}
+			@include media(480px){
+				margin-right:1rem;
+			}
+			a{
+				display:block;
+				color:$text01;
+				text-transform:uppercase;
+				font-size:2rem;
+				@include fontbase;
+				@include transition(all 0.3s);
+
+				@include media(1199px){
+					font-size:1.8rem;
+				}
+				@include media(767px){
+					font-size:1.6rem;
+				}
+				@include media(480px){
+					font-size:1.3rem;
+				}
+			}
+			&:hover{
+				&:before{
+					background:url('../images/ic-text-footer-hover.png')no-repeat;
+					@include media(767px){
+						background:none;
+					}
+				}
+				a{
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	p.copyright{
+		@include fontbase;
+		font-size:1.6rem;
+		color:$text01;
+		margin-top:1rem;
+		@include media(991px){
+			text-align:center;
+		}
+		@include media(767px){
+			text-align:center;
+		}
+		@include media(480px){
+			font-size:1.4rem;
+		}
+	}
+}
+
+.tenyear-footer{
+	padding:6rem 0;
+	width:100%;
+	background:$xanhduong-den;
+	img{
+		margin:0 auto;
+		@include media(480px){
+			transform:scale(0.8);
+			-webkit-transform:scale(0.8);
+			-moz-transform:scale(0.8);
+		}
+	}
+}
+
 .overlay-menu{
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(153,204,51,0.9);
-	opacity:0;
-	z-index:-1;
+	background: #2a2a2a;
+	opacity:1;
+	z-index:100;
+
+	nav{
+		text-align: center;
+		top: 50%;
+		height: 60%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		@include media(480px){
+			width:80%;
+			top:60%;
+		}
+		ul{
+			padding: 0;
+			margin: 0 auto;
+			display: inline-block;
+			height: 100%;
+			position: relative;
+			li{
+				display: block;
+				height: calc(100% / 6);
+				min-height: 4rem;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				@include media(480px){
+					min-height:auto;
+					height:calc(100% / 8);
+				}
+				a{
+					@include fontbase;
+					font-size: 4rem;
+					font-weight: 300;
+					display: block;
+					color: #fff;
+					text-transform: uppercase;
+					@include transition(all 0.3s);
+					&:hover{
+						color:$xanhduong2;
+					}
+					@include media(767px){
+						font-size:2.5rem;
+					}
+					@include media(480px){
+						font-size:1.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+/* EFFECT */
+.overlay-door {
+	visibility: hidden;
+	width: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: width 0.5s 0.1s, visibility 0s 0.8s;
+	transition: width 0.5s 0.1s, visibility 0s 0.8s;
+}
+
+.overlay-door.open {
+	visibility: visible;
+	width: 101%;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.overlay-door nav {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.1);
+	transform: translateY(-50%) translateX(-50%) scale(0.1);
+}
+
+.overlay-door nav,
+.overlay-door .overlay-close {
+	opacity: 0;
+	/*visibility: hidden;*/
+	-webkit-transition:  0.3s 0.5s;
+	transition:  0.3s 0.5s;
+}
+
+.overlay-door.open nav,
+.overlay-door.open .overlay-close {
+	opacity: 1;
+	/*visibility: visible;*/
+	-webkit-transition:  0.3s 0.1s;
+	transition:  0.3s 0.1s;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.overlay-door.close nav{
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.1);
+	transform: translateY(-50%) translateX(-50%) scale(0.1)
+}
+
+@media screen and (max-height: 30.5rem) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
 }

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/contact.css">
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- MENU -->
+	<script src="js/menu/modernizr.custom.js"></script>
+	<!-- SWIPER -->
+	<link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+	<script src="js/swiper/js/swiper.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#trigger-overlay').on('click',function(){
+				if($('.overlay').hasClass('open')){
+					$(this).addClass('btn-close');
+				}else{
+					$(this).removeClass('btn-close');
+				}
+			})
+
+			$('.contact-form').validate({
+				errorElement : 'span',
+				errorPlacement:function(error,element){
+					if(element.attr('name') == 'service[]'){
+						$('.error-service').html(error);
+					}else if(element.attr('name') == 'timing[]'){
+						$('.error-time').html(error);
+					}else if(element.attr('name') == 'budget[]'){
+						$('.error-budget').html(error);
+					}else{
+						error.insertAfter(element);
+					}
+				},
+				ignore: [],
+				rules: {
+					'service[]': {
+					  required: true
+					},
+					'timing[]':'required',
+					'budget[]':'required',
+					'name': 'required',
+					'email':{
+						required: true,
+						email: true
+					},
+					'phone':'required'
+				},
+				messages:{
+					'service[]':{
+						'required': 'Please choose one or multi items',
+					},
+					'timing[]':{
+						'required': 'Please choose one or multi items',
+					},
+					'budget[]':{
+						'required': 'Please choose one or multi items',
+					},
+
+				}
+			})
+
+			animation('animation','fadeInDown','80%')
+		})
+	</script>
+
+	<title>Contact US</title>
+</head>
+<body class="contact-page">
+	<div class="header">
+		<div class="wrap-header">
+			<a href="index.html" class="logo"><img src="images/logo-blue.png" class="img-responsive" alt=""></a>
+			<button type="button" class="btn-wrap-menu overlay-close" id="trigger-overlay">
+				<span class="text-menu">Menu</span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+	</div>	<!-- end header -->
+	<div class="overlay-menu overlay overlay-door">
+		<nav>
+			<ul class="main-navigation">
+				<li><a href="#">Agency</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Client</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">PLANT YOU NEXT WITH US</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="section" id="section01">
+
+		<div class="above-section01">
+			<div class="title-container">
+				<div class="center">
+					<div class="v-center">
+						<h1 class="title"><i class="ic-text left"></i>Contact Us<i class="ic-text right"></i></h1>
+						<h3 class="slogan animation hide-ani">We've got you covered !!</h3>
+						<p class="phone-num">08 3771 0626 - 0918 177 138</p>
+						<p class="email">info@bsgroup.com.vn</p>
+						<p class="addr">B47, 4A Street, Tan Hung Ward, District 7, Ho Chi Minh City, Vietnam</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-section01"></div>
+	</div>	<!-- end #section01 -->
+
+	<div class="section" id="section02">
+		<div class="title-container">
+			<div class="center">
+				<div class="v-center">
+					<h2 class="title"><i class="ic-text left"></i>Project Planner<i class="ic-text right"></i></h2>
+					<h3 class="slogan animation hide-ani">We've got you covered !!</h3>
+				</div>
+			</div>
+		</div>
+		<div class="form-contact">
+			<div class="container">
+				<form action="" method="" class="contact-form">
+					<h2 class="title"><i class="ic-text left"></i>HOW WE CAN ASSIST?<i class="ic-text right"></i></h2>
+					<fieldset id="form-service">
+						<legend>Service</legend>
+						<div class="wrap-top clearfix">
+							<div class="top">
+								<input type="checkbox" name="service[]" id="Concepts" value="Event Concepts"><label for="Concepts">Event Concepts</label>
+							</div>
+							<div class="top">
+								<input type="checkbox" name="service[]" id="Logistics" value="Event  Logistics"><label for="Logistics">Event  Logistics</label>
+							</div>
+							<div class="top">
+								<input type="checkbox" name="service[]" id="Technology" value="Event Technology"><label for="Technology">Event Technology</label>
+							</div>
+						</div>
+						<div class="wrap-bottom">
+							<div class="bottom">
+								<input type="checkbox" name="service[]" id="Activation" value="Event Activation & Production "><label for="Activation">Event Activation & Production </label>
+							</div>
+							<div class="bottom">
+								<input type="checkbox" name="service[]" id="package" value="THE FULL PACKAGE"><label for="package">THE FULL PACKAGE</label>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="error-service"></div>
+					</fieldset>
+
+					<fieldset id="form-time" class="clearfix">
+						<legend>TIMING</legend>
+						<div class="wrap-time">
+							<input type="checkbox" name="timing[]" id="jan" value="January"><label for="jan">Jan</label>
+						</div>
+						<div class="wrap-time">
+							<input type="checkbox" name="timing[]" id="feb" value="February"><label for="feb">Feb</label>
+						</div>
+						<div class="wrap-time">
+							<input type="checkbox" name="timing[]" id="march" value="March"><label for="march">Mar</label>
+						</div>
+						<div class="wrap-time">
+							<input type="checkbox" name="timing[]" id="apr" value="April"><label for="apr">APR</label>
+						</div>
+						<div class="wrap-time">
+							<input type="checkbox" name="timing[]" id="may" value="May"><label for="may">May</label>
+						</div>
+						<div class="wrap-time">
+							<input type="checkbox" name="timing[]" id="jun" value="June"><label for="jun">Jun</label>
+						</div>
+
+						<div class="wrap-time no-mar">
+							<input type="checkbox" name="timing[]" id="jul" value="July"><label for="jul">Jul</label>
+						</div>
+						<div class="wrap-time no-mar">
+							<input type="checkbox" name="timing[]" id="aug" value="August"><label for="aug">Aug</label>
+						</div>
+						<div class="wrap-time no-mar">
+							<input type="checkbox" name="timing[]" id="sep" value="September"><label for="sep">Sep</label>
+						</div>
+						<div class="wrap-time no-mar">
+							<input type="checkbox" name="timing[]" id="oct" value="October"><label for="oct">Oct</label>
+						</div>
+						<div class="wrap-time no-mar">
+							<input type="checkbox" name="timing[]" id="nov" value="November"><label for="nov">Nov</label>
+						</div>
+						<div class="wrap-time no-mar">
+							<input type="checkbox" name="timing[]" id="dec" value="December"><label for="dec">Dec</label>
+						</div>
+						<div class="error-time"></div>
+					</fieldset>
+
+					<fieldset id="budget">
+						<legend>Budget</legend>
+						<div class="wrap-budget-input clearfix">
+							<div class="wrap-budget">
+								<input type="checkbox" name="budget[]" id="10" value="10-25K"><label for="10">10 - 25K</label>
+							</div>
+							<div class="wrap-budget">
+								<input type="checkbox" name="budget[]" id="25" value="25-50K"><label for="25">25 - 50K</label>
+							</div>
+							<div class="wrap-budget">
+								<input type="checkbox" name="budget[]" id="50" value="50-100K"><label for="50">50 - 100K</label>
+							</div>
+							<div class="wrap-budget">
+								<input type="checkbox" name="budget[]" id="100" value="more than 100k"><label for="100">MORE THAN 100k</label>
+							</div>
+						</div>
+						<div class="error-budget"></div>
+					</fieldset>
+
+					<fieldset id="form-text">
+						<h2 class="title"><i class="ic-text left"></i>LET’S TALK<i class="ic-text right"></i></h2>
+						<div class="wrap-form-text">
+							<div class="container-fluid info-form">
+								<div class="row form-group">
+									<div class="col-sm-4 col-sm-offset-2">
+										<input type="text" name="name" class="form-control" placeholder="NAME">
+									</div>
+									<div class="col-sm-4">
+										<input type="text" name="email" class="form-control" placeholder="EMAIL">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-8 col-sm-offset-2">
+										<input type="text" name="phone" class="form-control" placeholder="CONTACT NUMBER">
+									</div>
+								</div>
+							</div>
+
+							<div class="container-fluid submit-form text-center">
+								<input type="submit" class="btn-submit" value="Submit">
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+
+		</div>	<!-- end form contact -->
+	</div>	<!-- end #section02 -->
+
+	<div class="tenyear-footer">
+		<img src="images/ten-year.png" class="img-responsive" alt="">
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-sm-2">
+					<a href="index.html"><img src="images/logo-footer-01.png" class="img-responsive logo-footer" alt=""></a>
+				</div>
+				<div class="col-md-7 col-sm-10">
+					<ul class="list-footer">
+						<li><a href="#">home</a></li>
+						<li><a href="#">Agency</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<p class="copyright">Copyright @BS Group Vietnam 2017</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/menu/classie.js"></script>
+	<script src="js/menu/demo1.js"></script>
+</body>
+</html>

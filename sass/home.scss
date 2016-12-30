@@ -1,5 +1,76 @@
 @import "_define";
+.section{
+	position:relative;
+	.title-container{
+		width:100%;
+		height:30rem;
+		text-align:center;
+		div.center{
+			height:100%;
+			width:100%;
+			display:table;
+			div.v-center{
+				display:table-cell;
+				vertical-align:middle;
+			}
+		}
+		h2.title{
+			margin-bottom:4rem;
+			font-size:3.3rem;
+			@include fontbase;
+			font-weight:600;
+			color:$xanhduong;
+			text-transform:uppercase;
+			vertical-align:baseline;
+			@include media(767px){
+				font-size:2.5rem;
+				margin-bottom:3rem;
+			}
+			@include media(480px){
+				font-size:2rem;
+				margin-bottom:2.8rem;
+			}
 
+			i.ic-text{
+				display:inline-block;
+				width:25px;
+				height:25px;
+				background:url('../images/ic-text.png')no-repeat;
+				vertical-align:baseline;
+				&.left{
+					margin-right:1rem;
+				}
+				&.right{
+					margin-left:1rem;
+				}
+				@include media(480px){
+					vertical-align:bottom;
+				}
+			}
+		}
+		p.sub-title{
+			max-width:80%;
+			margin:0 auto;
+			font-size:2.8rem;
+			line-height:3.2rem;
+			text-transform:capitalize;
+			color:$text01;
+			&.margin-bot{
+				margin-bottom:3rem;
+			}
+			@include media(767px){
+				max-width:100%;
+				font-size:1.8rem;
+				line-height:2.2rem;
+			}
+			@include media(480px){
+				font-size:1.6rem;
+				margin-bottom:2rem;
+			}
+
+		}
+	}
+}
 .section01{
 	width:100%;
 	min-height:500px;
@@ -18,6 +89,9 @@
 		}
 		img.ic-tenyear{
 			margin:0 auto 6rem;
+			@media screen and (max-width:650px) and (max-height:400px) and (orientation: landscape){
+				max-width:250px;
+			}
 		}
 		a.readmore{
 			font-size:1.5rem;
@@ -47,69 +121,37 @@
 			-webkit-animation:ani-btn 2s linear 0.8s infinite alternate;
 			-moz-animation:ani-btn 2s linear 0.8s infinite alternate;
 			cursor:pointer;
-		}
-	}
-}
-.section{
-	position:relative;
-	.title-container{
-		width:100%;
-		height:30rem;
-		text-align:center;
-		div.center{
-			height:100%;
-			width:100%;
-			display:table;
-			div.v-center{
-				display:table-cell;
-				vertical-align:middle;
+			@include media(1024px){
+				bottom:10%;
+				animation:none;
+				-webkit-animation:none;
+				-moz-animation:none;
 			}
-		}
-		h2.title{
-			margin-bottom:4rem;
-			font-size:3.3rem;
-			@include fontbase;
-			font-weight:600;
-			color:$xanhduong;
-			display:inline-block;
-			text-transform:uppercase;
-			vertical-align:baseline;
-			i.ic-text{
-				display:inline-block;
-				width:25px;
-				height:25px;
-				background:url('../images/ic-text.png')no-repeat;
-				vertical-align:baseline;
-				&.left{
-					margin-right:1rem; 
-				}
-				&.right{
-					margin-left:1rem; 
-				}
-			}
-		}
-		p.sub-title{
-			max-width:50%;
-			margin:0 auto;
-			font-size:2.8rem;
-			line-height:3.2rem;
-			text-transform:capitalize;
-			color:$text01;
-			&.margin-bot{
-				margin-bottom:3rem;
+			@media screen and (max-width:650px) and (max-height:400px) and (orientation: landscape){
+				bottom:5%;
 			}
 		}
 	}
 }
+
 #about-section{
 	width:100%;
 	height:100%;
+	@include media(767px){
+		height:auto;
+	}
+	.title-container{
+		@include media(767px){
+			height:auto;
+			padding:3rem 0;
+		}
+	}
 	.img-container{
 		height:calc(100% - 300px);
 		width:100%;
 		position:relative;
-		.container-float{
-			// position:relative;
+		@include media(767px){
+			height:auto;
 		}
 		.wrap-left{
 			width:60%;
@@ -117,17 +159,29 @@
 			position:absolute;
 			background:url('../images/bg01-section2.jpg')no-repeat;
 			background-size:cover;
+			@include media(767px){
+				position:static;
+				width:100%;
+				height:auto;
+				min-height:30rem;
+			}
 		}
 		.right-top, .right-bottom{
 			position:absolute;
 			height:50%;
 			width:40%;
 			right:0;
+			@include media(767px){
+				width:100%;
+				position:static;
+				height:auto;
+			}
 		}
 		.right-top{
 			top:0;
 			background:url('../images/bg02-section2.jpg')no-repeat;
 			background-size:cover;
+			min-height:25rem;
 		}
 		.right-bottom{
 			bottom:0;
@@ -141,7 +195,7 @@
 					top:10px;
 					right:10px;
 					color:white;
-					z-index:100;
+					z-index:10;
 					text-transform:capitalize;
 					@include transition(all 0.3s);
 					&:hover{
@@ -155,6 +209,9 @@
 						height:100%;
 						.each-slide{
 							height:100%;
+							@include media(767px){
+								padding:3rem 0;
+							}
 							.center{
 								display:table;
 								width:100%;
@@ -168,18 +225,40 @@
 									color:white;
 									img{
 										margin-bottom:2rem;
+										@include media(991px){
+											transform:scale(0.8);
+											-webkit-transform:scale(0.8);
+											-moz-transform:scale(0.8);
+										}
+										@include media(767px){
+											transform:scale(0.6);
+											-webkit-transform:scale(0.6);
+											-moz-transform:scale(0.6);
+											margin-bottom:0;
+										}
 									}
 									h3.title-slide{
 										@include fontbase;
 										font-size:2.6rem;
 										text-transform:uppercase;
 										margin-bottom:0.5rem;
+										@include media(991px){
+											font-size:2rem
+										}
+										@include media(767px){
+											font-size:1.8rem;
+										}
 									}
 									p.sub-slide{
 										@include fontbase;
 										font-size:2rem;
 										color:$xanhduong2;
-
+										@include media(991px){
+											font-size:1.6rem;
+										}
+										@include media(767px){
+											font-size:1.4rem;
+										}
 									}
 								}
 							}
@@ -205,9 +284,17 @@
 #service-section{
 	height:100%;
 	width:100%;
+	@include media(767px){
+		height:auto;
+	}
 	#services{
 		height:30%;
 		min-height:35rem;
+		@include media(767px){
+			height:auto;
+			padding:3rem 0;
+			min-height:auto;
+		}
 		.container{
 			height:100%;
 			.center{
@@ -223,6 +310,9 @@
 						span{
 							padding:0 1.5rem;
 							display:inline-block;
+							@include media(480px){
+								margin-bottom:1.5rem;
+							}
 						}
 						a.btn-me{
 							font-size:1.5rem;
@@ -237,6 +327,10 @@
 								background:transparent;
 								color:$xanhduong;
 								border:1px solid $xanhduong;
+							}
+							@include media(480px){
+								font-size:1.3rem;
+								padding:4px 18px;
 							}
 						}
 					}
@@ -259,17 +353,25 @@
 					@include fontbase;
 					margin-bottom:2rem;
 					color:$text01;
+					@include media(767px){
+						font-size:2rem;
+						margin-bottom:1.5rem;
+					}
 				}
 				p.description{
 					@include fontbase;
 					font-size:1.6rem;
 					color:$text01;
 					line-height:2rem;
+					@include media(767px){
+						font-size:1.4rem;
+						margin-bottom:1.8rem;
+					}
 				}
 			}
 		}
 	}
-	
+
 }
 
 .background-area{
@@ -277,6 +379,9 @@
 	height:700px;
 	background:url('../images/bg-section3.jpg')no-repeat;
 	background-size:cover;
+	@include media(767px){
+		height:400px;
+	}
 	.center{
 		display:table;
 		height:100%;
@@ -303,11 +408,19 @@
 					background:url('../images/ic-text.png')no-repeat;
 					vertical-align:baseline;
 					&.left{
-						margin-right:1rem; 
+						margin-right:1rem;
 					}
 					&.right{
-						margin-left:1rem; 
+						margin-left:1rem;
 					}
+				}
+				@include media(767px){
+					font-size:2.5rem;
+					margin-bottom:3rem;
+				}
+				@include media(480px){
+					font-size:2rem;
+					margin-bottom:2.8rem;
 				}
 			}
 			p.sub-title{
@@ -318,6 +431,15 @@
 				line-height:4.5rem;
 				text-transform:uppercase;;
 				color:white;
+				@include media(767px){
+					font-size:1.8rem;
+					line-height:2.2rem;
+					margin-bottom:2.5rem
+				}
+				@include media(480px){
+					font-size:1.6rem;
+					margin-bottom:2rem;
+				}
 			}
 			a.readmore{
 				font-size:1.5rem;
@@ -331,16 +453,12 @@
 					background:$xanhduong2;
 					color:white;
 				}
+				@include media(480px){
+					font-size:1.4rem;
+					padding:5px 18px;
+				}
 			}
 		}
-	}
-}
-.tenyear-footer{
-	padding:6rem 0;
-	width:100%;
-	background:$xanhduong-den;
-	img{
-		margin:0 auto;
 	}
 }
 
