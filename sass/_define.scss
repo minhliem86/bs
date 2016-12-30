@@ -47,7 +47,7 @@ div.clear{
 .header{
 	position:absolute;
 	width:100%;
-	padding:3rem 3rem 0;
+	padding:6rem 6rem 0;
 	z-index:1000;
 	@include media(767px){
 		padding:1.5rem 1.5rem 0;
@@ -136,14 +136,23 @@ div.clear{
 
 /* FOOTER */
 .footer{
-	padding:4rem 0;
+	padding:0.8rem 0;
+	.wrap-footer-bar{
+		position:relative;
+	}
 	img.logo-footer{
+		position:absolute;
+		transform:translateY(-50%);
+		-webkit-transform:translateY(-50%);
+		-moz-transform:translateY(-50%);
 		@include media(767px){
 			margin: 0 auto 1rem;
 		}
 	}
 	ul.list-footer{
 		margin-top:1rem;
+		display: block;
+		text-align: center;
 		@include media(991px){
 			display:block;
 			text-align: center;
@@ -156,7 +165,8 @@ div.clear{
 		}
 		li{
 			display:inline-block;
-			margin-right:4rem;
+			// margin-right:4rem;
+			padding:0 2rem;
 			&:last-child{
 				margin-right:0;
 			}
@@ -193,18 +203,18 @@ div.clear{
 				display:block;
 				color:$text01;
 				text-transform:uppercase;
-				font-size:2rem;
+				font-size:1.6rem;
 				@include fontbase;
 				@include transition(all 0.3s);
 
 				@include media(1199px){
-					font-size:1.8rem;
+					font-size:1.4rem;
 				}
 				@include media(767px){
-					font-size:1.6rem;
+					font-size:1.4rem;
 				}
 				@include media(480px){
-					font-size:1.3rem;
+					font-size:1.2rem;
 				}
 			}
 			&:hover{
@@ -222,9 +232,13 @@ div.clear{
 	}
 	p.copyright{
 		@include fontbase;
-		font-size:1.6rem;
+		font-size:1.2rem;
 		color:$text01;
-		margin-top:1rem;
+		// margin-top:1rem;
+		position: absolute;
+		right:0;
+		top:0rem;
+
 		@include media(991px){
 			text-align:center;
 		}
@@ -238,7 +252,7 @@ div.clear{
 }
 
 .tenyear-footer{
-	padding:6rem 0;
+	padding:1.5rem 0;
 	width:100%;
 	background:$xanhduong-den;
 	img{

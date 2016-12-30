@@ -3,7 +3,7 @@
 	position:relative;
 	.title-container{
 		width:100%;
-		height:30rem;
+		height:35rem;
 		text-align:center;
 		div.center{
 			height:100%;
@@ -15,8 +15,8 @@
 			}
 		}
 		h2.title{
-			margin-bottom:4rem;
-			font-size:3.3rem;
+			margin-bottom:3rem;
+			font-size:2.5rem;
 			@include fontbase;
 			font-weight:600;
 			color:$xanhduong;
@@ -33,8 +33,8 @@
 
 			i.ic-text{
 				display:inline-block;
-				width:25px;
-				height:25px;
+				width:16px;
+				height:16px;
 				background:url('../images/ic-text.png')no-repeat;
 				vertical-align:baseline;
 				&.left{
@@ -51,10 +51,11 @@
 		p.sub-title{
 			max-width:80%;
 			margin:0 auto;
-			font-size:2.8rem;
-			line-height:3.2rem;
+			font-size:6rem;
+			line-height:6.2rem;
 			text-transform:capitalize;
 			color:$text01;
+			@include fontbaskvill;
 			&.margin-bot{
 				margin-bottom:3rem;
 			}
@@ -141,20 +142,32 @@
 		height:auto;
 	}
 	.title-container{
+		padding-left:3rem;
 		@include media(767px){
 			height:auto;
 			padding:3rem 0;
 		}
+		.v-center{
+			display:block;
+			margin-top:12rem;
+		}
+		h2.title{
+			text-align:left;
+		}
+		p.sub-title{
+			max-width:none;
+			text-align:left;
+		}
 	}
 	.img-container{
-		height:calc(100% - 300px);
+		height:calc(100% - 35rem);
 		width:100%;
 		position:relative;
 		@include media(767px){
 			height:auto;
 		}
 		.wrap-left{
-			width:60%;
+			width:65%;
 			height:100%;
 			position:absolute;
 			background:url('../images/bg01-section2.jpg')no-repeat;
@@ -168,8 +181,7 @@
 		}
 		.right-top, .right-bottom{
 			position:absolute;
-			height:50%;
-			width:40%;
+			width:35%;
 			right:0;
 			@include media(767px){
 				width:100%;
@@ -178,12 +190,14 @@
 			}
 		}
 		.right-top{
+			height:55%;
 			top:0;
 			background:url('../images/bg02-section2.jpg')no-repeat;
 			background-size:cover;
 			min-height:25rem;
 		}
 		.right-bottom{
+			height:45%;
 			bottom:0;
 			#about-swiper{
 				background:$xam;
@@ -201,6 +215,7 @@
 					&:hover{
 						color:$xanhduong2;
 						right:5px;
+						font-weight:bold;
 					}
 				}
 				.swiper-wrapper{
@@ -239,19 +254,19 @@
 									}
 									h3.title-slide{
 										@include fontbase;
-										font-size:2.6rem;
+										font-size:2rem;
 										text-transform:uppercase;
 										margin-bottom:0.5rem;
 										@include media(991px){
-											font-size:2rem
+											font-size:1.8rem
 										}
 										@include media(767px){
-											font-size:1.8rem;
+											font-size:1.6rem;
 										}
 									}
 									p.sub-slide{
 										@include fontbase;
-										font-size:2rem;
+										font-size:1.7rem;
 										color:$xanhduong2;
 										@include media(991px){
 											font-size:1.6rem;
@@ -289,7 +304,8 @@
 	}
 	#services{
 		height:30%;
-		min-height:35rem;
+		min-height:40rem;
+		margin-bottom:2.5rem;
 		@include media(767px){
 			height:auto;
 			padding:3rem 0;
@@ -302,10 +318,14 @@
 				width:100%;
 				height:100%;
 				.v-center{
-					display:table-cell;
-					height:100%;
-					vertical-align:middle;
+					display:block;
 					text-align:center;
+					margin-top:12rem;
+					p.sub-title{
+						span.sub-text{
+							font-size:5rem;
+						}
+					}
 					.wrap-button{
 						span{
 							padding:0 1.5rem;
@@ -315,17 +335,17 @@
 							}
 						}
 						a.btn-me{
-							font-size:1.5rem;
-							padding:6px 25px;
-							color:white;
-							background:#079acf;
+							font-size:1.3rem;
+							padding:5px 20px;
+							color:$xanhduong;
+							background:white;
 							border-radius:20px;
-							border:1px solid transparent;
+							border:1px solid $xanhduong;
 							text-transform:uppercase;
 							@include transition(all 0.3s);
 							&:hover{
-								background:transparent;
-								color:$xanhduong;
+								background:$xanhduong;
+								color:white;
 								border:1px solid $xanhduong;
 							}
 							@include media(480px){
@@ -339,8 +359,13 @@
 		}
 	}
 	#project{
-		height:calc(100% - 35rem);
+		height:calc(100% - 40rem);
 		min-height:70%;
+		.container{
+			h2.title{
+				margin-bottom:5rem;
+			}
+		}
 		.project-container{
 			.each-project{
 				text-align:left;
@@ -376,7 +401,7 @@
 
 .background-area{
 	width:100%;
-	height:700px;
+	height:500px;
 	background:url('../images/bg-section3.jpg')no-repeat;
 	background-size:cover;
 	@include media(767px){
@@ -393,20 +418,20 @@
 			vertical-align:middle;
 			text-align:center;
 			h2.title{
-				margin-bottom:4rem;
-				font-size:3.3rem;
+				margin-bottom:3rem;
+				font-size:2.5rem;
 				@include fontbase;
 				font-weight:600;
 				color:$xanhduong;
-				display:inline-block;
 				text-transform:uppercase;
-				vertical-align:baseline;
+				vertical-align:middle;
+
 				i.ic-text{
 					display:inline-block;
 					width:25px;
 					height:25px;
 					background:url('../images/ic-text.png')no-repeat;
-					vertical-align:baseline;
+					vertical-align:middle;
 					&.left{
 						margin-right:1rem;
 					}
@@ -426,10 +451,10 @@
 			p.sub-title{
 				max-width:90%;
 				margin:0 auto 4rem;
-				font-size:4rem;
-				font-weight:bold;
-				line-height:4.5rem;
-				text-transform:uppercase;;
+				font-size:6rem;
+				@include fontbaskvill;
+				line-height:6.5rem;
+				text-transform:normal;;
 				color:white;
 				@include media(767px){
 					font-size:1.8rem;
@@ -443,7 +468,7 @@
 			}
 			a.readmore{
 				font-size:1.5rem;
-				padding:6px 25px;
+				padding:8px 25px;
 				color:$xanhduong2;
 				border-radius:20px;
 				border:1px solid $xanhduong2;
