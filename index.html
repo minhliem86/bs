@@ -39,14 +39,11 @@
 			}
 		})
 
-		$('.ic-scrolldown').on('click',function(){
-			var target = $(this).data('target');
-
-			$('html, body').animate({
-				scrollTop:$(target).offset().top
-			},1000);
-
-		})
+		$('.wrap-all figure').hover(function(){
+			projectSwiper.stopAutoplay();
+		},function(){
+			projectSwiper.startAutoplay();
+		});
 
 		$('#trigger-overlay').on('click',function(){
 			if($('.overlay').hasClass('open')){
@@ -94,9 +91,9 @@
 				<li><a href="#">Agency</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Projects</a></li>
-				<li><a href="#">Client</a></li>
+				<li><a href="#">Clients</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="#">PLANT YOU NEXT WITH US</a></li>
+				<li><a href="#">PLAN YOU NEXT WITH US</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -190,32 +187,14 @@
 								<div class="swiper-slide">
 									<div class="each-project">
 										<div class="wrap-all">
-											<img src="images/h1.jpg" class="img-responsive" alt="">
-
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="each-project">
-										<div class="wrap-all">
-											<img src="images/h1.jpg" class="img-responsive" alt="">
-
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="each-project">
-										<div class="wrap-all">
-											<img src="images/h1.jpg" class="img-responsive" alt="">
-
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="each-project">
-										<div class="wrap-all">
-											<img src="images/h1.jpg" class="img-responsive" alt="">
-
+											<figure class="effect-bubba">
+												<img src="images/h1.jpg" class="img-responsive" alt="">
+												<figcaption>
+													<h4 class="title">Project 01</h4>
+													<p class="description">Lorem ipsum dolor sit amet, </p>
+													<a href="#" class="viewmore">View more</a>
+												</figcaption>
+											</figure>
 										</div>
 									</div>
 								</div>
@@ -223,16 +202,63 @@
 								<div class="swiper-slide">
 									<div class="each-project">
 										<div class="wrap-all">
+										<figure class="effect-bubba">
 											<img src="images/h1.jpg" class="img-responsive" alt="">
+											<figcaption>
+												<h4 class="title">Project 01</h4>
+												<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellendus facilis laudantium! </p>
+												<a href="#" class="viewmore">View more</a>
+											</figcaption>
+										</figure>
+
 
 										</div>
 									</div>
 								</div>
-
 								<div class="swiper-slide">
 									<div class="each-project">
 										<div class="wrap-all">
+										<figure class="effect-bubba">
 											<img src="images/h1.jpg" class="img-responsive" alt="">
+											<figcaption>
+												<h4 class="title">Project 01</h4>
+												<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellendus facilis laudantium! </p>
+												<a href="#" class="viewmore">View more</a>
+											</figcaption>
+										</figure>
+
+
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="each-project">
+										<div class="wrap-all">
+										<figure class="effect-bubba">
+											<img src="images/h1.jpg" class="img-responsive" alt="">
+											<figcaption>
+												<h4 class="title">Project 01</h4>
+												<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellendus facilis laudantium! </p>
+												<a href="#" class="viewmore">View more</a>
+											</figcaption>
+										</figure>
+
+
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="each-project">
+										<div class="wrap-all">
+										<figure class="effect-bubba">
+											<img src="images/h1.jpg" class="img-responsive" alt="">
+											<figcaption>
+												<h4 class="title">Project 01</h4>
+												<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellendus facilis laudantium! </p>
+												<a href="#" class="viewmore">View more</a>
+											</figcaption>
+										</figure>
+
 
 										</div>
 									</div>
@@ -266,8 +292,8 @@
 				<ul class="list-footer">
 					<li><a href="#">home</a></li>
 					<li><a href="#">Agency</a></li>
-					<li><a href="contact.html">Contact</a></li>
 					<li><a href="#">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 				<p class="copyright">Copyright @BS Group Vietnam 2017</p>
 			</div>

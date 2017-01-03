@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/agency.css">
+
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- MENU -->
+	<script src="js/menu/modernizr.custom.js"></script>
+	<!-- SWIPER -->
+	<link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+	<script src="js/swiper/js/swiper.min.js"></script>
+	<!-- END -->
+
+	<script>
+	$(document).ready(function(){
+
+		var projectSwiper = new Swiper('#swiper-partner',{
+			slidesPerView : 8,
+			spaceBetween: 10,
+			autoplay: 3500,
+			speed: 1200,
+			breakpoints:{
+				992: {
+					slidesPerView: 6,
+     				spaceBetween: 10
+				},
+				480: {
+					slidesPerView: 1,
+     				spaceBetween: 10
+				}
+			}
+		})
+
+		// ANIMATION
+		animation('animation','fadeInDown','80%');
+
+	})
+	</script>
+
+	<title>Agency</title>
+</head>
+<body class="page-level-2">
+	<div class="header">
+		<div class="wrap-header">
+			<a href="index.html" class="logo"><img src="images/logo-blue.png" class="img-responsive" alt=""></a>
+			<button type="button" class="btn-wrap-menu overlay-close" id="trigger-overlay">
+				<span class="text-menu">Menu</span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+	</div>	<!-- end header -->
+	<div class="overlay-menu overlay overlay-door">
+		<nav>
+			<ul class="main-navigation">
+				<li><a href="#">Agency</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Clients</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">PLAN YOU NEXT WITH US</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="section section01">
+		<div class="title-container">
+			<div class="wrap-title">
+				<h2 class="title"><i class="ic-text left"></i>The people behind BS Group<i class="ic-text right"></i></h2>
+			</div>
+		</div>
+		<div class="content-section content01">
+			<div class="container fullheight">
+				<div class="wrap-content">
+					<p class="big-text">
+						YES WE CAN.<br/>ALWAYS
+					</p>
+					<p class="small-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.BS onequam felis, ultricies. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempora facilis perspiciatis! Facere tempora, aperiam similique, quibusdam beatae aut fugiat consequuntur dolor laboriosam officiis culpa accusantium explicabo eaque repellendus? Nisi.</p>
+				</div>
+			</div>
+		</div>
+	</div>	<!-- end section01 -->
+	<div class="section section02">
+		<div class="top-section">
+			<div class="container">
+				<h2 class="title">Ultimately, the purpose of events is to<br/>build a heritage</h2>
+				<div class="row ">
+					<div class="col-md-6 col-sm-12">
+						<div class="each-vision">
+							<h3 class="title-level-2">OUR VISION</h3>
+							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aliquam molestiae magni id, fuga quidem! Quia dicta assumenda odit, ullam voluptate, modi, soluta corrupti eum possimus quas quis, optio dolor.</p>
+						</div>
+
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="each-vision">
+							<h3 class="title-level-2">OUR APPROACH</h3>
+							<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aliquam molestiae magni id, fuga quidem! Quia dicta assumenda odit, ullam voluptate, modi, soluta corrupti eum possimus quas quis, optio dolor.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-section">
+			<div class="fullheight container">
+				<div class="left-img"></div>
+				<div class="right-top-img right-img"></div>
+				<div class="right-bottom-img right-img"></div>
+				<div class="right-middle-img right-img"></div>
+			</div>
+
+		</div>
+	</div>	<!-- end section02 -->
+
+	<div class="section section03">
+		<div class="title-container">
+			<div class="container">
+				<div class="wrap-title">
+					<h2 class="title"><i class="ic-text left"></i>OUR SERVICES<i class="ic-text right"></i></h2>
+					<p class="sub-title">Quality is our best service</p>
+				</div>
+			</div>
+		</div>
+		<div class="content-section content03">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="each-service">
+							<img src="images/agency/ic-event-01.png" class="img-responsive img-service" alt="Service">
+							<h4 class="name-service">Event Concepts</h4>
+							<div class="description">
+								<ul class="list-des">
+									<li>Content Developer</li>
+									<li>Brand Engagement & Support</li>
+									<li>Graphic Design</li>
+									<li>Stage & Scenic Design </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="each-service">
+							<img src="images/agency/ic-event-01.png" class="img-responsive img-service" alt="Service">
+							<h4 class="name-service">Event  Logistics</h4>
+							<div class="description">
+								<ul class="list-des">
+									<li>Registration Management Venue</li>
+									<li>Selection & Sourcing</li>
+									<li>Food & Beverage Coordination</li>
+									<li>Hotel & Travel Management</li>
+									<li>Sponsor Relations</li>
+									<li>VIP Coordination</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="each-service">
+							<img src="images/agency/ic-event-01.png" class="img-responsive img-service" alt="Service">
+							<h4 class="name-service">Event Technology</h4>
+							<div class="description">
+								<ul class="list-des">
+									<li>Online Event Portals</li>
+									<li>Social Media</li>
+									<li>Digital Engagement</li>
+									<li>Live Streaming</li>
+									<li>Video Development,<br/>& Direction & Editing</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="each-service">
+							<img src="images/agency/ic-event-01.png" class="img-responsive img-service" alt="Service">
+							<h4 class="name-service">Event Activation</h4>
+							<div class="description">
+								<ul class="list-des">
+									<li>Design & Construction Services</li>
+									<li>Graphic Production</li>
+									<li>Event Production</li>
+									<li>Technical Direction</li>
+									<li>Audio Visual Services & Equipment</li>
+									<li>Speaker & Talent Management</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	<!-- end section 03 -->
+
+	<div class="section section04">
+		<div class="title-container">
+			<div class="wrap-title">
+				<h2 class="title"><i class="ic-text left"></i>Our Clients<i class="ic-text right"></i></h2>
+				<p class="sub-title">Quality is our best service</p>
+			</div>
+		</div>
+		<div class="content-section content04">
+			<div class="container">
+				<div class="swiper-container" id="swiper-partner">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/agency/logo-lorem.png" class="img-responsive img-circle logo-partner" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>	<!-- end section 03 -->
+
+
+	<div class="background-area">
+		<div class="center">
+			<div class="v-center">
+				<h2 class="title"><i class="ic-text left"></i>New Project<i class="ic-text right"></i></h2>
+				<p class="sub-title animation hide-ani">How about planning<br/>your next event with us?</p>
+				<a href="#" class="readmore">LET'S CREATE RESULTS</a>
+			</div>
+		</div>
+	</div>	<!-- end Background area -->
+
+	<div class="tenyear-footer">
+		<img src="images/ten-year-small.png" class="img-responsive" alt="">
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="wrap-footer-bar">
+				<a href="index.html"><img src="images/logo-footer-01.png" class="img-responsive logo-footer" alt=""></a>
+				<ul class="list-footer">
+					<li><a href="#">home</a></li>
+					<li><a href="#">Agency</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<p class="copyright">Copyright @BS Group Vietnam 2017</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/menu/classie.js"></script>
+	<script src="js/menu/demo1.js"></script>
+</body>
+</html>

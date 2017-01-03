@@ -595,7 +595,140 @@ i.ic-scrolldown {
   }
 }
 
-/* line 6, C:/xampp/htdocs/bs/sass/contact.scss */
+/* line 3, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area {
+  width: 100%;
+  height: 500px;
+  background: url("../images/bg-section3.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, C:/xampp/htdocs/bs/sass/agency.scss */
+  .background-area {
+    height: 400px;
+  }
+}
+
+/* line 11, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center {
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 21, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center h2.title {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-family: 'GothamBook';
+  font-weight: 600;
+  color: #009ace;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* line 30, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center h2.title i.ic-text {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/ic-text.png") no-repeat;
+  vertical-align: middle;
+}
+
+/* line 36, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center h2.title i.ic-text.left {
+  margin-right: 1rem;
+}
+
+/* line 39, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center h2.title i.ic-text.right {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, C:/xampp/htdocs/bs/sass/agency.scss */
+  .background-area .center .v-center h2.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 21, C:/xampp/htdocs/bs/sass/agency.scss */
+  .background-area .center .v-center h2.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* line 52, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center p.sub-title {
+  max-width: 90%;
+  margin: 0 auto 4rem;
+  font-size: 6rem;
+  font-family: 'Baskerville Old Face';
+  line-height: 6.5rem;
+  text-transform: normal;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 52, C:/xampp/htdocs/bs/sass/agency.scss */
+  .background-area .center .v-center p.sub-title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 52, C:/xampp/htdocs/bs/sass/agency.scss */
+  .background-area .center .v-center p.sub-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.8rem;
+    line-height: 3rem;
+  }
+}
+
+/* line 71, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center a.readmore {
+  font-size: 1.5rem;
+  padding: 8px 25px;
+  color: #00b3d8;
+  border-radius: 20px;
+  border: 1px solid #00b3d8;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* line 79, C:/xampp/htdocs/bs/sass/agency.scss */
+.background-area .center .v-center a.readmore:hover {
+  background: #00b3d8;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 71, C:/xampp/htdocs/bs/sass/agency.scss */
+  .background-area .center .v-center a.readmore {
+    font-size: 1.2rem;
+    padding: 5px 18px;
+  }
+}
+
+/* line 94, C:/xampp/htdocs/bs/sass/agency.scss */
 body.page-level-2 .header button.btn-wrap-menu span.text-menu {
   font-size: 1.8rem;
   font-family: 'GothamBook';
@@ -607,13 +740,13 @@ body.page-level-2 .header button.btn-wrap-menu span.text-menu {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 6, C:/xampp/htdocs/bs/sass/contact.scss */
+  /* line 94, C:/xampp/htdocs/bs/sass/agency.scss */
   body.page-level-2 .header button.btn-wrap-menu span.text-menu {
     font-size: 1.5rem;
   }
 }
 
-/* line 18, C:/xampp/htdocs/bs/sass/contact.scss */
+/* line 106, C:/xampp/htdocs/bs/sass/agency.scss */
 body.page-level-2 .header button.btn-wrap-menu span.icon-bar {
   display: inline-block;
   vertical-align: middle;
@@ -628,7 +761,7 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar {
   -moz-transition: all 0.3s;
 }
 
-/* line 28, C:/xampp/htdocs/bs/sass/contact.scss */
+/* line 116, C:/xampp/htdocs/bs/sass/agency.scss */
 body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-level-2 .header button.btn-wrap-menu span.icon-bar:after {
   content: '';
   display: inline-block;
@@ -646,8 +779,25 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-l
   -moz-transition: all 0.3s;
 }
 
-/* line 48, C:/xampp/htdocs/bs/sass/contact.scss */
-.section h1.title, .section h2.title {
+/* line 136, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 139, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .title-container {
+  width: 100%;
+  height: 30rem;
+}
+
+/* line 142, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .title-container div.wrap-title {
+  padding-top: 16rem;
+}
+
+/* line 144, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .title-container div.wrap-title h2.title {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2.5rem;
@@ -659,23 +809,23 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-l
 }
 
 @media screen and (max-width: 767px) {
-  /* line 48, C:/xampp/htdocs/bs/sass/contact.scss */
-  .section h1.title, .section h2.title {
+  /* line 144, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section01 .title-container div.wrap-title h2.title {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 48, C:/xampp/htdocs/bs/sass/contact.scss */
-  .section h1.title, .section h2.title {
+  /* line 144, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section01 .title-container div.wrap-title h2.title {
     font-size: 2rem;
     margin-bottom: 2.8rem;
   }
 }
 
-/* line 66, C:/xampp/htdocs/bs/sass/contact.scss */
-.section h1.title i.ic-text, .section h2.title i.ic-text {
+/* line 162, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .title-container div.wrap-title h2.title i.ic-text {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -683,404 +833,312 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-l
   vertical-align: bottom;
 }
 
-/* line 72, C:/xampp/htdocs/bs/sass/contact.scss */
-.section h1.title i.ic-text.left, .section h2.title i.ic-text.left {
+/* line 168, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .title-container div.wrap-title h2.title i.ic-text.left {
   margin-right: 1rem;
 }
 
-/* line 75, C:/xampp/htdocs/bs/sass/contact.scss */
-.section h1.title i.ic-text.right, .section h2.title i.ic-text.right {
+/* line 171, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .title-container div.wrap-title h2.title i.ic-text.right {
   margin-left: 1rem;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 66, C:/xampp/htdocs/bs/sass/contact.scss */
-  .section h1.title i.ic-text, .section h2.title i.ic-text {
+  /* line 162, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section01 .title-container div.wrap-title h2.title i.ic-text {
     vertical-align: bottom;
   }
 }
 
-/* line 83, C:/xampp/htdocs/bs/sass/contact.scss */
-.section h3.slogan {
-  font-size: 4rem;
-  padding-bottom: 3.5rem;
-  margin-bottom: 3rem;
-  font-family: 'Baskerville Old Face';
-  color: #6d6e71;
+/* line 181, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .content01 {
+  width: 100%;
+  height: calc(100% - 30rem);
+  background: url("../images/agency/bg01.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 186, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .content01 .fullheight {
+  min-height: 100%;
   position: relative;
+}
+
+/* line 189, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .content01 .fullheight .wrap-content {
+  position: absolute;
+  top: 12rem;
+  left: 10rem;
+  max-width: 45rem;
+  text-align: center;
+}
+
+/* line 195, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .content01 .fullheight .wrap-content p.big-text {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-family: 'GothamBook';
+  color: white;
   text-transform: uppercase;
 }
 
-/* line 91, C:/xampp/htdocs/bs/sass/contact.scss */
-.section h3.slogan:after {
+/* line 202, C:/xampp/htdocs/bs/sass/agency.scss */
+.section01 .content01 .fullheight .wrap-content p.small-text {
+  font-family: 'Baskerville Old Face';
+  font-size: 1.7rem;
+  color: white;
+  line-height: 2.5rem;
+}
+
+/* line 212, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 {
+  padding-top: 5rem;
+}
+
+/* line 214, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .top-section {
+  margin-bottom: 4rem;
+}
+
+/* line 216, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .top-section h2.title {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4.2rem;
+  color: #6d6e71;
+  font-family: 'Baskerville Old Face';
+  margin-bottom: 7rem;
+  text-transform: uppercase;
+}
+
+/* line 227, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .top-section .each-vision h3.title-level-2 {
+  font-family: 'GothamBook';
+  color: #009ace;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+/* line 235, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .top-section .each-vision p.description {
+  font-size: 1.8rem;
+  font-family: 'GothamBook';
+  color: #6d6e71;
+  line-height: 2.2rem;
+}
+
+/* line 243, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section {
+  height: 70rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 243, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section02 .bottom-section {
+    height: 40px;
+  }
+}
+
+/* line 248, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section .fullheight {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 252, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section .fullheight .left-img {
+  position: absolute;
+  min-height: 100%;
+  width: 53%;
+  left: 0;
+  top: 0;
+  background: url("../images/agency/img01.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* line 261, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section .fullheight .right-img {
+  position: absolute;
+  width: 45%;
+  height: 32%;
+  right: 0;
+  background-size: cover;
+}
+
+/* line 267, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section .fullheight .right-img.right-top-img {
+  background-image: url("../images/agency/img02.jpg");
+  top: 0;
+}
+
+/* line 271, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section .fullheight .right-img.right-bottom-img {
+  background-image: url("../images/agency/img04.jpg");
+  bottom: 0;
+}
+
+/* line 275, C:/xampp/htdocs/bs/sass/agency.scss */
+.section02 .bottom-section .fullheight .right-img.right-middle-img {
+  background-image: url("../images/agency/img03.jpg");
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+
+/* line 288, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03, .section04 {
+  padding-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+/* line 291, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container, .section04 .title-container {
+  margin-bottom: 3rem;
+}
+
+/* line 294, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container .wrap-title h2.title, .section04 .title-container .wrap-title h2.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-family: 'GothamBook';
+  font-weight: 600;
+  color: #009ace;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 294, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section03 .title-container .wrap-title h2.title, .section04 .title-container .wrap-title h2.title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 294, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section03 .title-container .wrap-title h2.title, .section04 .title-container .wrap-title h2.title {
+    font-size: 2rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+/* line 312, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container .wrap-title h2.title i.ic-text, .section04 .title-container .wrap-title h2.title i.ic-text {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/ic-text.png") no-repeat;
+  vertical-align: bottom;
+}
+
+/* line 318, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container .wrap-title h2.title i.ic-text.left, .section04 .title-container .wrap-title h2.title i.ic-text.left {
+  margin-right: 1rem;
+}
+
+/* line 321, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container .wrap-title h2.title i.ic-text.right, .section04 .title-container .wrap-title h2.title i.ic-text.right {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 312, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section03 .title-container .wrap-title h2.title i.ic-text, .section04 .title-container .wrap-title h2.title i.ic-text {
+    vertical-align: bottom;
+  }
+}
+
+/* line 329, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container .wrap-title p.sub-title, .section04 .title-container .wrap-title p.sub-title {
+  font-size: 4rem;
+  line-height: 4.2rem;
+  text-transform: capitalize;
+  color: #6d6e71;
+  text-align: center;
+  font-family: 'Baskerville Old Face';
+  text-transform: uppercase;
+}
+
+/* line 337, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .title-container .wrap-title p.sub-title.margin-bot, .section04 .title-container .wrap-title p.sub-title.margin-bot {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 329, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section03 .title-container .wrap-title p.sub-title, .section04 .title-container .wrap-title p.sub-title {
+    max-width: 100%;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 329, C:/xampp/htdocs/bs/sass/agency.scss */
+  .section03 .title-container .wrap-title p.sub-title, .section04 .title-container .wrap-title p.sub-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 354, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .content03 .each-service img.img-service, .section04 .content03 .each-service img.img-service {
+  margin: 0 auto 1.5rem;
+}
+
+/* line 357, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .content03 .each-service h4.name-service, .section04 .content03 .each-service h4.name-service {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  font-family: 'GothamBook';
+  position: relative;
+  color: #6d6e71;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* line 367, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .content03 .each-service h4.name-service:after, .section04 .content03 .each-service h4.name-service:after {
   content: '';
   display: block;
   position: absolute;
-  width: 100%;
-  max-width: 410px;
   height: 1px;
+  width: 100px;
   background: #6d6e71;
-  bottom: 0;
+  margin: 0 auto;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
 }
 
-/* line 107, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 {
-  width: 100%;
-  height: 100%;
+/* line 383, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .content03 .each-service .description ul.list-des, .section04 .content03 .each-service .description ul.list-des {
+  display: block;
+  list-style: none;
 }
 
-@media screen and (max-width: 991px) {
-  /* line 107, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section01 {
-    height: auto;
-  }
-}
-
-/* line 113, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .bottom-section01 {
-  width: 100%;
-  height: calc(100% - 480px);
-  background: url("../images/contact/img01.jpg") no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 113, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section01 .bottom-section01 {
-    height: auto;
-    min-height: 350px;
-  }
-}
-
-/* line 123, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 {
-  width: 100%;
-  max-height: 480px;
-  height: 100%;
-  padding-top: 12rem;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 123, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section01 .above-section01 {
-    height: auto;
-    margin-bottom: 2rem;
-  }
-}
-
-/* line 132, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 .ic-scrolldown {
-  bottom: 5%;
-}
-
-/* line 135, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 .title-container {
-  width: 100%;
-  height: 100%;
+/* line 386, C:/xampp/htdocs/bs/sass/agency.scss */
+.section03 .content03 .each-service .description ul.list-des li, .section04 .content03 .each-service .description ul.list-des li {
+  margin-bottom: 0.3rem;
   text-align: center;
-}
-
-/* line 139, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 .title-container div.center {
-  height: 100%;
-  width: 100%;
-  display: table;
-}
-
-/* line 143, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 .title-container div.center div.v-center {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 148, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 .title-container p.phone-num, #section01 .above-section01 .title-container p.email, #section01 .above-section01 .title-container p.addr {
-  font-family: 'GothamBook';
+  font-size: 1.5rem;
   color: #6d6e71;
-  font-size: 1.6rem;
-  margin-bottom: 1.8rem;
-  text-transform: uppercase;
-}
-
-/* line 155, C:/xampp/htdocs/bs/sass/contact.scss */
-#section01 .above-section01 .title-container p.addr {
-  margin-bottom: 0;
-}
-
-/* line 164, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 {
-  padding: 5rem 0;
-}
-
-/* line 166, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 .title-container {
-  text-align: center;
-}
-
-/* line 168, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 .title-container h3.slogan {
-  margin-bottom: 5rem;
-}
-
-/* line 174, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form h4.title {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 2rem;
   font-family: 'GothamBook';
-  font-weight: 600;
-  color: #009ace;
-  text-transform: uppercase;
 }
 
-/* line 183, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset {
-  margin: 0 auto 2rem;
-  border: none;
-}
-
-/* line 186, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset legend {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #6d6e71;
-  margin-bottom: 2.5rem;
-  text-align: center;
-  border: none;
-  text-transform: uppercase;
-}
-
-/* line 196, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form input[type="checkbox"] {
-  visibility: hidden;
-  position: absolute;
-}
-
-/* line 200, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form label {
-  padding: 5px 0;
-  border: 1px solid #009ace;
-  color: #009ace;
-  text-transform: uppercase;
-  width: 100%;
-  border-radius: 20px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  text-align: center;
-  cursor: pointer;
-  font-size: 1.3rem;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 200, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section02 div.form-contact form.contact-form label {
-    font-size: 1.2rem;
-  }
-}
-
-/* line 215, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form input[type="checkbox"]:checked + label {
-  background: #009ace;
-  color: white;
-  font-weight: 600;
-}
-
-/* line 220, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-service {
-  width: 60%;
-}
-
-@media screen and (max-width: 1199px) {
-  /* line 220, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section02 div.form-contact form.contact-form fieldset#form-service {
-    width: 80%;
-  }
-}
-
-/* line 225, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-service .wrap-top {
-  margin: 0 auto 2rem;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 225, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section02 div.form-contact form.contact-form fieldset#form-service .wrap-top {
-    width: 100%;
-  }
-}
-
-/* line 230, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-service .wrap-top div.top {
-  width: calc(100%/3);
-  float: left;
-  padding: 0 2rem;
-}
-
-/* line 236, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-service .wrap-bottom {
-  width: 90%;
+/* line 401, C:/xampp/htdocs/bs/sass/agency.scss */
+.section04 img.logo-partner {
+  border: 3px solid #86878b;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 236, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section02 div.form-contact form.contact-form fieldset#form-service .wrap-bottom {
-    width: 100%;
-  }
-}
-
-/* line 242, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-service .wrap-bottom .bottom:nth-child(1), #section02 div.form-contact form.contact-form fieldset#form-service .wrap-bottom .bottom:nth-child(2) {
-  width: calc(100%/3*2);
-  float: left;
-  padding: 0 2rem;
-}
-
-/* line 247, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-service .wrap-bottom .bottom:nth-child(2) {
-  width: calc(100%/3*1);
-}
-
-/* line 253, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-time {
-  width: 50%;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 253, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section02 div.form-contact form.contact-form fieldset#form-time {
-    width: 100%;
-  }
-}
-
-/* line 258, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-time .wrap-time {
-  width: calc(100%/6);
-  padding: 0 0.8rem;
-  float: left;
-  margin-bottom: 1rem;
-}
-
-/* line 263, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-time .wrap-time.no-mar {
-  margin-bottom: 0;
-}
-
-/* line 268, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#budget {
-  width: 60%;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 268, C:/xampp/htdocs/bs/sass/contact.scss */
-  #section02 div.form-contact form.contact-form fieldset#budget {
-    width: 100%;
-  }
-}
-
-/* line 274, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#budget .wrap-budget-input .wrap-budget {
-  width: calc(100%/5);
-  padding: 0 1.5rem;
-  float: left;
-}
-
-/* line 279, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#budget .wrap-budget-input .wrap-budget:last-child {
-  width: calc(100%/5*2);
-}
-
-/* line 286, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-text .wrap-form-text .info-form {
-  margin-bottom: 3rem;
-}
-
-/* line 288, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-text .wrap-form-text .info-form input {
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  border-bottom: 1px solid #6d6e71;
-  padding: 6px 0;
-}
-
-/* line 297, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-text .wrap-form-text div.submit-form input.btn-submit {
-  outline: none;
-  padding: 6px 25px;
-  text-transform: uppercase;
-  color: #009ace;
-  border: 1px solid #009ace;
-  border-radius: 20px;
-  font-size: 1.4rem;
-  background: none;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  position: relative;
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-}
-
-/* line 311, C:/xampp/htdocs/bs/sass/contact.scss */
-#section02 div.form-contact form.contact-form fieldset#form-text .wrap-form-text div.submit-form input.btn-submit:hover {
-  background: #009ace;
-  color: white;
-  font-weight: bold;
-  transform: translateY(20%);
-  -webkit-transform: translateY(20%);
-  -moz-transform: translateY(20%);
-}
-
-/* line 326, C:/xampp/htdocs/bs/sass/contact.scss */
-span.error {
-  color: red;
-}
-
-/* line 329, C:/xampp/htdocs/bs/sass/contact.scss */
-.error-service, .error-time, .error-budget {
-  color: red;
-  text-align: center;
-}
-
-@keyframes ani-btn {
-  0% {
-    bottom: 5%;
-  }
-  50% {
-    bottom: 4%;
-  }
-  100% {
-    bottom: 5%;
-  }
-}
-
-@-webkit-keyframes ani-btn {
-  0% {
-    bottom: 5%;
-  }
-  50% {
-    bottom: 4%;
-  }
-  100% {
-    bottom: 5%;
-  }
-}
-
-@-moz-keyframes ani-btn {
-  0% {
-    bottom: 5%;
-  }
-  50% {
-    bottom: 4%;
-  }
-  100% {
-    bottom: 5%;
-  }
+  box-shadow: 0 0 3px #a0a1a4;
 }

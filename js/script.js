@@ -1,3 +1,13 @@
+$(document).ready(function(){
+	$('.ic-scrolldown').on('click',function(){
+		var target = $(this).data('target');
+
+		$('html, body').animate({
+			scrollTop:$(target).offset().top
+		},1000);
+	})
+})
+
 function animation(classname, animate,offset){
 	classname  = classname || 'animation';
 

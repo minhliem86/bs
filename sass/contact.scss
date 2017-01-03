@@ -1,6 +1,6 @@
 @import "_define";
 
-body.contact-page{
+body.page-level-2{
 	.header{
 		button.btn-wrap-menu{
 			span.text-menu{
@@ -47,8 +47,8 @@ body.contact-page{
 .section{
 	h1.title, h2.title{
 		text-align:center;
-		margin-bottom:2.5rem;
-		font-size:2.6rem;
+		margin-bottom:3rem;
+		font-size:2.5rem;
 		@include fontbase;
 		font-weight:600;
 		color:$xanhduong;
@@ -129,6 +129,9 @@ body.contact-page{
 			height:auto;
 			margin-bottom:2rem;
 		}
+		.ic-scrolldown{
+			bottom:5%;
+		}
 		.title-container{
 			width:100%;
 			height:100%;
@@ -145,8 +148,8 @@ body.contact-page{
 			p.phone-num, p.email, p.addr{
 				@include fontbase;
 				color:$text01;
-				font-size:2rem;
-				margin-bottom:2.5rem;
+				font-size:1.6rem;
+				margin-bottom:1.8rem;
 				text-transform:uppercase;
 			}
 			p.addr{
@@ -159,26 +162,32 @@ body.contact-page{
 }
 
 #section02{
-	padding:8rem 0;
+	padding:5rem 0;
 	.title-container{
 		text-align:center;
 		h3.slogan{
-			margin-bottom:8rem;
+			margin-bottom:5rem;
 		}
 	}
 	div.form-contact{
 		form.contact-form{
-			h2.title{
-				margin-bottom:5rem;
+			h4.title{
+				text-align:center;
+				margin-bottom:2.5rem;
+				font-size:2rem;
+				@include fontbase;
+				font-weight:600;
+				color:$xanhduong;
+				text-transform:uppercase;
 			}
 			fieldset{
-				margin-bottom:6rem;
+				margin:0 auto 2rem;
 				border:none;
 				legend{
-					font-size:2.6rem;
+					font-size:1.8rem;
 					font-weight:600;
 					color:$text01;
-					margin-bottom:3rem;
+					margin-bottom:2.5rem;
 					text-align:center;
 					border:none;
 					text-transform:uppercase;
@@ -198,6 +207,10 @@ body.contact-page{
 				@include transition(all 0.3s);
 				text-align:center;
 				cursor:pointer;
+				font-size:1.3rem;
+				@include media(991px){
+					font-size:1.2rem;
+				}
 			}
 			input[type="checkbox"]:checked + label{
 				background:$xanhduong;
@@ -205,8 +218,11 @@ body.contact-page{
 				font-weight:600;
 			}
 			fieldset#form-service{
+				width:60%;
+				@include media(1199px){
+					width:80%
+				}
 				.wrap-top{
-					width:80%;
 					margin:0 auto 2rem;
 					@include media(991px){
 						width:100%;
@@ -218,7 +234,7 @@ body.contact-page{
 					}
 				}
 				.wrap-bottom{
-					width:70%;
+					width:90%;
 					margin:0 auto;
 					@include media(991px){
 						width:100%;
@@ -235,9 +251,13 @@ body.contact-page{
 				}
 			}
 			fieldset#form-time{
+				width:50%;
+				@include media(991px){
+					width:100%;
+				}
 				.wrap-time{
 					width:calc(100%/6);
-					padding:0 1.5rem;
+					padding:0 0.8rem;
 					float:left;
 					margin-bottom:1rem;
 					&.no-mar{
@@ -246,12 +266,11 @@ body.contact-page{
 				}
 			}
 			fieldset#budget{
+				width:60%;
+				@include media(991px){
+					width:100%;
+				}
 				.wrap-budget-input{
-					width:60%;
-					margin:0 auto;
-					@include media(991px){
-						width:100%;
-					}
 					.wrap-budget{
 						width:calc(100%/5);
 						padding:0 1.5rem;
@@ -260,7 +279,6 @@ body.contact-page{
 					.wrap-budget:last-child(){
 						width:calc(100%/5*2);
 					}
-
 				}
 			}
 			fieldset#form-text{
@@ -277,6 +295,7 @@ body.contact-page{
 					}
 					div.submit-form{
 						input.btn-submit{
+							outline:none;
 							padding:6px 25px;
 							text-transform:uppercase;
 							color:$xanhduong;
@@ -310,4 +329,20 @@ span.error{
 .error-service, .error-time, .error-budget{
 	color:red;
 	text-align:center;
+}
+
+@keyframes ani-btn{
+	0%{bottom:5%}
+	50%{bottom:4%}
+	100%{bottom:5%}
+}
+@-webkit-keyframes ani-btn{
+	0%{bottom:5%}
+	50%{bottom:4%}
+	100%{bottom:5%}
+}
+@-moz-keyframes ani-btn{
+	0%{bottom:5%}
+	50%{bottom:4%}
+	100%{bottom:5%}
 }

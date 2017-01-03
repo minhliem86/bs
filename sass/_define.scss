@@ -49,6 +49,8 @@ div.clear{
 	width:100%;
 	padding:6rem 6rem 0;
 	z-index:1000;
+	top:0;
+	left:0;
 	@include media(767px){
 		padding:1.5rem 1.5rem 0;
 	}
@@ -133,20 +135,52 @@ div.clear{
 		}
 	}
 }
+i.ic-scrolldown{
+	position:absolute;
+	bottom:15%;
+	left:50%;
+	transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	display:block;
+	width:27px;
+	height:42px;
+	background:url('../images/ic-scrolldown.png')no-repeat;
+	animation:ani-btn 2s linear 0.8s infinite alternate;
+	-webkit-animation:ani-btn 2s linear 0.8s infinite alternate;
+	-moz-animation:ani-btn 2s linear 0.8s infinite alternate;
+	cursor:pointer;
+	@include media(1024px){
+		bottom:10%;
+		animation:none;
+		-webkit-animation:none;
+		-moz-animation:none;
+	}
+	@media screen and (max-width:650px) and (max-height:400px) and (orientation: landscape){
+		bottom:5%;
+	}
+}
+
 
 /* FOOTER */
 .footer{
-	padding:0.8rem 0;
+	padding:1.2rem 0;
 	.wrap-footer-bar{
 		position:relative;
 	}
 	img.logo-footer{
 		position:absolute;
-		transform:translateY(-50%);
-		-webkit-transform:translateY(-50%);
-		-moz-transform:translateY(-50%);
+		top:50%;
+		transform:translateY(-55%);
+		-webkit-transform:translateY(-55%);
+		-moz-transform:translateY(-55%);
 		@include media(767px){
 			margin: 0 auto 1rem;
+			position:static;
+			top:auto;
+			transform:none;
+			-webkit-transform:none;
+			-moz-transform:none;
 		}
 	}
 	ul.list-footer{
@@ -184,20 +218,24 @@ div.clear{
 				@include transition(all 0.3s);
 			}
 			@include media(1199px){
-				margin-right:2.5rem;
+				margin-right:2rem;
+				padding:0;
 			}
 			@include media(991px){
-				margin-right:2.5rem;
+				margin-right:1.5rem;
+				&:before{
+					display:none;
+				}
 			}
 			@include media(767px){
 				padding-left:0;
-				margin-right:2rem;
+				margin-right:1.3rem;
 				&:before{
 					display:none;
 				}
 			}
 			@include media(480px){
-				margin-right:1rem;
+				margin-right:0.5rem;
 			}
 			a{
 				display:block;
@@ -241,12 +279,14 @@ div.clear{
 
 		@include media(991px){
 			text-align:center;
+			position:static;
 		}
 		@include media(767px){
 			text-align:center;
+			position:static;
 		}
 		@include media(480px){
-			font-size:1.4rem;
+
 		}
 	}
 }
@@ -291,19 +331,20 @@ div.clear{
 			display: inline-block;
 			height: 100%;
 			position: relative;
+			margin-top:30%;
 			li{
 				display: block;
-				height: calc(100% / 6);
-				min-height: 4rem;
+				height: calc(100% / 8);
+				min-height: 2rem;
 				-webkit-backface-visibility: hidden;
 				backface-visibility: hidden;
 				@include media(480px){
 					min-height:auto;
-					height:calc(100% / 8);
+					height:calc(100% / 10);
 				}
 				a{
 					@include fontbase;
-					font-size: 4rem;
+					font-size: 2.5rem;
 					font-weight: 300;
 					display: block;
 					color: #fff;

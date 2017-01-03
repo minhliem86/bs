@@ -1,96 +1,98 @@
 @import url(../fonts/gothambook/font.css);
 @import url(../fonts/baskvill/font.css);
 /* COLOR */
-/* line 30, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 30, C:/xampp/htdocs/bs/sass/_define.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 31, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 31, C:/xampp/htdocs/bs/sass/_define.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 32, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 32, C:/xampp/htdocs/bs/sass/_define.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 33, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 33, C:/xampp/htdocs/bs/sass/_define.scss */
 body {
   font-family: 'GothamBook';
 }
 
-/* line 35, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 35, C:/xampp/htdocs/bs/sass/_define.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 39, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 39, C:/xampp/htdocs/bs/sass/_define.scss */
 h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
 }
 
-/* line 40, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 40, C:/xampp/htdocs/bs/sass/_define.scss */
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
 }
 
-/* line 42, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 42, C:/xampp/htdocs/bs/sass/_define.scss */
 div.clear {
   clear: both;
 }
 
-/* line 45, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 45, C:/xampp/htdocs/bs/sass/_define.scss */
 .hide-ani {
   visibility: hidden;
   opacity: 0;
 }
 
-/* line 46, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 46, C:/xampp/htdocs/bs/sass/_define.scss */
 .show-ani {
   visibility: visible;
 }
 
-/* line 47, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 47, C:/xampp/htdocs/bs/sass/_define.scss */
 .header {
   position: absolute;
   width: 100%;
   padding: 6rem 6rem 0;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 47, D:/xampp/htdocs/bs/sass/_define.scss */
+  /* line 47, C:/xampp/htdocs/bs/sass/_define.scss */
   .header {
     padding: 1.5rem 1.5rem 0;
   }
 }
 
-/* line 55, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 57, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header {
   position: relative;
 }
 
-/* line 57, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 59, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header a.logo {
   float: left;
 }
 
-/* line 59, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 61, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header a.logo img {
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
 }
 
-/* line 64, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 66, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu {
   position: absolute;
   right: 0;
@@ -100,7 +102,7 @@ div.clear {
   outline: none;
 }
 
-/* line 71, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 73, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.text-menu {
   font-size: 1.8rem;
   font-family: 'GothamBook';
@@ -112,13 +114,13 @@ div.clear {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 71, D:/xampp/htdocs/bs/sass/_define.scss */
+  /* line 73, C:/xampp/htdocs/bs/sass/_define.scss */
   .header .wrap-header button.btn-wrap-menu span.text-menu {
     font-size: 1.5rem;
   }
 }
 
-/* line 83, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 85, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar {
   display: inline-block;
   vertical-align: middle;
@@ -133,7 +135,7 @@ div.clear {
   -moz-transition: all 0.3s;
 }
 
-/* line 93, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 95, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar:before, .header .wrap-header button.btn-wrap-menu span.icon-bar:after {
   content: '';
   display: inline-block;
@@ -151,22 +153,22 @@ div.clear {
   -moz-transition: all 0.3s;
 }
 
-/* line 107, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 109, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar:before {
   top: -10px;
 }
 
-/* line 111, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 113, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu span.icon-bar:after {
   bottom: -10px;
 }
 
-/* line 117, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 119, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu.btn-close span.icon-bar {
   background: transparent;
 }
 
-/* line 120, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 122, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu.btn-close span.icon-bar:before {
   top: 0;
   transform: rotate(45deg);
@@ -174,7 +176,7 @@ div.clear {
   -moz-transform: rotate(45deg);
 }
 
-/* line 126, D:/xampp/htdocs/bs/sass/_define.scss */
+/* line 128, C:/xampp/htdocs/bs/sass/_define.scss */
 .header .wrap-header button.btn-wrap-menu.btn-close span.icon-bar:after {
   bottom: 0;
   transform: rotate(135deg);
@@ -182,543 +184,8 @@ div.clear {
   -moz-transform: rotate(135deg);
 }
 
-/* FOOTER */
-/* line 138, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer {
-  padding: 0.8rem 0;
-}
-
-/* line 140, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer .wrap-footer-bar {
-  position: relative;
-}
-
-/* line 143, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer img.logo-footer {
-  position: absolute;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-}
-
-@media screen and (max-width: 767px) {
-  /* line 143, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer img.logo-footer {
-    margin: 0 auto 1rem;
-  }
-}
-
-/* line 152, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer {
-  margin-top: 1rem;
-  display: block;
-  text-align: center;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 152, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer {
-    display: block;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 152, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer {
-    display: block;
-    text-align: center;
-  }
-}
-
-/* line 166, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer li {
-  display: inline-block;
-  padding: 0 2rem;
-  position: relative;
-  padding-left: 25px;
-}
-
-/* line 170, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer li:last-child {
-  margin-right: 0;
-}
-
-/* line 175, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer li:before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 0;
-  display: block;
-  width: 19px;
-  height: 19px;
-  background: url("../images/ic-text-footer.png") no-repeat;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-
-@media screen and (max-width: 1199px) {
-  /* line 166, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li {
-    margin-right: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  /* line 166, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li {
-    margin-right: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 166, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li {
-    padding-left: 0;
-    margin-right: 2rem;
-  }
-  /* line 195, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li:before {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 166, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li {
-    margin-right: 1rem;
-  }
-}
-
-/* line 202, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer li a {
-  display: block;
-  color: #6d6e71;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-family: 'GothamBook';
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-
-@media screen and (max-width: 1199px) {
-  /* line 202, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li a {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 202, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li a {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 202, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li a {
-    font-size: 1.2rem;
-  }
-}
-
-/* line 221, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer li:hover:before {
-  background: url("../images/ic-text-footer-hover.png") no-repeat;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 221, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer ul.list-footer li:hover:before {
-    background: none;
-  }
-}
-
-/* line 227, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer ul.list-footer li:hover a {
-  font-weight: bold;
-}
-
-/* line 233, D:/xampp/htdocs/bs/sass/_define.scss */
-.footer p.copyright {
-  font-family: 'GothamBook';
-  font-size: 1.2rem;
-  color: #6d6e71;
-  position: absolute;
-  right: 0;
-  top: 0rem;
-}
-
-@media screen and (max-width: 991px) {
-  /* line 233, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer p.copyright {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 233, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer p.copyright {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 233, D:/xampp/htdocs/bs/sass/_define.scss */
-  .footer p.copyright {
-    font-size: 1.4rem;
-  }
-}
-
-/* line 254, D:/xampp/htdocs/bs/sass/_define.scss */
-.tenyear-footer {
-  padding: 1.5rem 0;
-  width: 100%;
-  background: #061c32;
-}
-
-/* line 258, D:/xampp/htdocs/bs/sass/_define.scss */
-.tenyear-footer img {
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 480px) {
-  /* line 258, D:/xampp/htdocs/bs/sass/_define.scss */
-  .tenyear-footer img {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-  }
-}
-
-/* line 268, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #2a2a2a;
-  opacity: 1;
-  z-index: 100;
-}
-
-/* line 278, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-menu nav {
-  text-align: center;
-  top: 50%;
-  height: 60%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media screen and (max-width: 480px) {
-  /* line 278, D:/xampp/htdocs/bs/sass/_define.scss */
-  .overlay-menu nav {
-    width: 80%;
-    top: 60%;
-  }
-}
-
-/* line 288, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-menu nav ul {
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  height: 100%;
-  position: relative;
-}
-
-/* line 294, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-menu nav ul li {
-  display: block;
-  height: calc(100% / 6);
-  min-height: 4rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-@media screen and (max-width: 480px) {
-  /* line 294, D:/xampp/htdocs/bs/sass/_define.scss */
-  .overlay-menu nav ul li {
-    min-height: auto;
-    height: calc(100% / 8);
-  }
-}
-
-/* line 304, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-menu nav ul li a {
-  font-family: 'GothamBook';
-  font-size: 4rem;
-  font-weight: 300;
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-
-/* line 312, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-menu nav ul li a:hover {
-  color: #00b3d8;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 304, D:/xampp/htdocs/bs/sass/_define.scss */
-  .overlay-menu nav ul li a {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 304, D:/xampp/htdocs/bs/sass/_define.scss */
-  .overlay-menu nav ul li a {
-    font-size: 1.6rem;
-  }
-}
-
-/* EFFECT */
-/* line 327, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-door {
-  visibility: hidden;
-  width: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-transition: width 0.5s 0.1s, visibility 0s 0.8s;
-  transition: width 0.5s 0.1s, visibility 0s 0.8s;
-}
-
-/* line 337, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-door.open {
-  visibility: visible;
-  width: 101%;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-}
-
-/* line 344, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-door nav {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.1);
-  transform: translateY(-50%) translateX(-50%) scale(0.1);
-}
-
-/* line 351, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-door nav,
-.overlay-door .overlay-close {
-  opacity: 0;
-  /*visibility: hidden;*/
-  -webkit-transition: 0.3s 0.5s;
-  transition: 0.3s 0.5s;
-}
-
-/* line 359, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-door.open nav,
-.overlay-door.open .overlay-close {
-  opacity: 1;
-  /*visibility: visible;*/
-  -webkit-transition: 0.3s 0.1s;
-  transition: 0.3s 0.1s;
-  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
-  transform: translateY(-50%) translateX(-50%) scale(1);
-}
-
-/* line 369, D:/xampp/htdocs/bs/sass/_define.scss */
-.overlay-door.close nav {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.1);
-  transform: translateY(-50%) translateX(-50%) scale(0.1);
-}
-
-@media screen and (max-height: 30.5rem) {
-  /* line 377, D:/xampp/htdocs/bs/sass/_define.scss */
-  .overlay nav {
-    height: 70%;
-    font-size: 34px;
-  }
-  /* line 381, D:/xampp/htdocs/bs/sass/_define.scss */
-  .overlay ul li {
-    min-height: 34px;
-  }
-}
-
-/* line 2, D:/xampp/htdocs/bs/sass/home.scss */
-.section {
-  position: relative;
-}
-
-/* line 4, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container {
-  width: 100%;
-  height: 35rem;
-  text-align: center;
-}
-
-/* line 8, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container div.center {
-  height: 100%;
-  width: 100%;
-  display: table;
-}
-
-/* line 12, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container div.center div.v-center {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 17, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container h2.title {
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  font-family: 'GothamBook';
-  font-weight: 600;
-  color: #009ace;
-  text-transform: uppercase;
-  vertical-align: baseline;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 17, D:/xampp/htdocs/bs/sass/home.scss */
-  .section .title-container h2.title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 17, D:/xampp/htdocs/bs/sass/home.scss */
-  .section .title-container h2.title {
-    font-size: 2rem;
-    margin-bottom: 2.8rem;
-  }
-}
-
-/* line 34, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container h2.title i.ic-text {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: url("../images/ic-text.png") no-repeat;
-  vertical-align: baseline;
-}
-
-/* line 40, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container h2.title i.ic-text.left {
-  margin-right: 1rem;
-}
-
-/* line 43, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container h2.title i.ic-text.right {
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 480px) {
-  /* line 34, D:/xampp/htdocs/bs/sass/home.scss */
-  .section .title-container h2.title i.ic-text {
-    vertical-align: bottom;
-  }
-}
-
-/* line 51, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container p.sub-title {
-  max-width: 80%;
-  margin: 0 auto;
-  font-size: 6rem;
-  line-height: 6.2rem;
-  text-transform: capitalize;
-  color: #6d6e71;
-  font-family: 'Baskerville Old Face';
-}
-
-/* line 59, D:/xampp/htdocs/bs/sass/home.scss */
-.section .title-container p.sub-title.margin-bot {
-  margin-bottom: 3rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 51, D:/xampp/htdocs/bs/sass/home.scss */
-  .section .title-container p.sub-title {
-    max-width: 100%;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 51, D:/xampp/htdocs/bs/sass/home.scss */
-  .section .title-container p.sub-title {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-}
-
-/* line 75, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 {
-  width: 100%;
-  min-height: 500px;
-  height: 100%;
-  background: url("../images/bg-section01.jpg") no-repeat;
-  background-size: cover;
-}
-
-/* line 81, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 div.center {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-
-/* line 85, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 div.center .v-center {
-  display: table-cell;
-  height: 100%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* line 91, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 div.center img.ic-tenyear {
-  margin: 0 auto 6rem;
-}
-
-@media screen and (max-width: 650px) and (max-height: 400px) and (orientation: landscape) {
-  /* line 91, D:/xampp/htdocs/bs/sass/home.scss */
-  .section01 div.center img.ic-tenyear {
-    max-width: 250px;
-  }
-}
-
-/* line 97, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 div.center a.readmore {
-  font-size: 1.5rem;
-  padding: 6px 25px;
-  color: #00b3d8;
-  border-radius: 20px;
-  border: 1px solid #00b3d8;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-
-/* line 105, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 div.center a.readmore:hover {
-  background: #00b3d8;
-  color: white;
-}
-
-/* line 110, D:/xampp/htdocs/bs/sass/home.scss */
-.section01 div.center i.ic-scrolldown {
+/* line 138, C:/xampp/htdocs/bs/sass/_define.scss */
+i.ic-scrolldown {
   position: absolute;
   bottom: 15%;
   left: 50%;
@@ -736,8 +203,8 @@ div.clear {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 110, D:/xampp/htdocs/bs/sass/home.scss */
-  .section01 div.center i.ic-scrolldown {
+  /* line 138, C:/xampp/htdocs/bs/sass/_define.scss */
+  i.ic-scrolldown {
     bottom: 10%;
     animation: none;
     -webkit-animation: none;
@@ -746,56 +213,625 @@ div.clear {
 }
 
 @media screen and (max-width: 650px) and (max-height: 400px) and (orientation: landscape) {
-  /* line 110, D:/xampp/htdocs/bs/sass/home.scss */
-  .section01 div.center i.ic-scrolldown {
+  /* line 138, C:/xampp/htdocs/bs/sass/_define.scss */
+  i.ic-scrolldown {
     bottom: 5%;
   }
 }
 
-/* line 138, D:/xampp/htdocs/bs/sass/home.scss */
+/* FOOTER */
+/* line 166, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer {
+  padding: 1.2rem 0;
+}
+
+/* line 168, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer .wrap-footer-bar {
+  position: relative;
+}
+
+/* line 171, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer img.logo-footer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  -webkit-transform: translateY(-55%);
+  -moz-transform: translateY(-55%);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 171, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer img.logo-footer {
+    margin: 0 auto 1rem;
+    position: static;
+    top: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+  }
+}
+
+/* line 186, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer {
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 186, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 186, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* line 200, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer li {
+  display: inline-block;
+  padding: 0 2rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+/* line 204, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer li:last-child {
+  margin-right: 0;
+}
+
+/* line 209, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer li:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url("../images/ic-text-footer.png") no-repeat;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 200, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li {
+    margin-right: 2rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 200, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li {
+    margin-right: 1.5rem;
+  }
+  /* line 226, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 200, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li {
+    padding-left: 0;
+    margin-right: 1.3rem;
+  }
+  /* line 233, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 200, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li {
+    margin-right: 0.5rem;
+  }
+}
+
+/* line 240, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer li a {
+  display: block;
+  color: #6d6e71;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: 'GothamBook';
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 240, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 240, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 240, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* line 259, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer li:hover:before {
+  background: url("../images/ic-text-footer-hover.png") no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 259, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer ul.list-footer li:hover:before {
+    background: none;
+  }
+}
+
+/* line 265, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer ul.list-footer li:hover a {
+  font-weight: bold;
+}
+
+/* line 271, C:/xampp/htdocs/bs/sass/_define.scss */
+.footer p.copyright {
+  font-family: 'GothamBook';
+  font-size: 1.2rem;
+  color: #6d6e71;
+  position: absolute;
+  right: 0;
+  top: 0rem;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 271, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer p.copyright {
+    text-align: center;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 271, C:/xampp/htdocs/bs/sass/_define.scss */
+  .footer p.copyright {
+    text-align: center;
+    position: static;
+  }
+}
+
+/* line 294, C:/xampp/htdocs/bs/sass/_define.scss */
+.tenyear-footer {
+  padding: 1.5rem 0;
+  width: 100%;
+  background: #061c32;
+}
+
+/* line 298, C:/xampp/htdocs/bs/sass/_define.scss */
+.tenyear-footer img {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 298, C:/xampp/htdocs/bs/sass/_define.scss */
+  .tenyear-footer img {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+}
+
+/* line 308, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2a2a2a;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* line 318, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu nav {
+  text-align: center;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 480px) {
+  /* line 318, C:/xampp/htdocs/bs/sass/_define.scss */
+  .overlay-menu nav {
+    width: 80%;
+    top: 60%;
+  }
+}
+
+/* line 328, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu nav ul {
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  margin-top: 30%;
+}
+
+/* line 335, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu nav ul li {
+  display: block;
+  height: calc(100% / 8);
+  min-height: 2rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 335, C:/xampp/htdocs/bs/sass/_define.scss */
+  .overlay-menu nav ul li {
+    min-height: auto;
+    height: calc(100% / 10);
+  }
+}
+
+/* line 345, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu nav ul li a {
+  font-family: 'GothamBook';
+  font-size: 2.5rem;
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* line 353, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-menu nav ul li a:hover {
+  color: #00b3d8;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 345, C:/xampp/htdocs/bs/sass/_define.scss */
+  .overlay-menu nav ul li a {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 345, C:/xampp/htdocs/bs/sass/_define.scss */
+  .overlay-menu nav ul li a {
+    font-size: 1.6rem;
+  }
+}
+
+/* EFFECT */
+/* line 368, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-door {
+  visibility: hidden;
+  width: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: width 0.5s 0.1s, visibility 0s 0.8s;
+  transition: width 0.5s 0.1s, visibility 0s 0.8s;
+}
+
+/* line 378, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-door.open {
+  visibility: visible;
+  width: 101%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+/* line 385, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-door nav {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.1);
+  transform: translateY(-50%) translateX(-50%) scale(0.1);
+}
+
+/* line 392, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-door nav,
+.overlay-door .overlay-close {
+  opacity: 0;
+  /*visibility: hidden;*/
+  -webkit-transition: 0.3s 0.5s;
+  transition: 0.3s 0.5s;
+}
+
+/* line 400, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-door.open nav,
+.overlay-door.open .overlay-close {
+  opacity: 1;
+  /*visibility: visible;*/
+  -webkit-transition: 0.3s 0.1s;
+  transition: 0.3s 0.1s;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+  transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+/* line 410, C:/xampp/htdocs/bs/sass/_define.scss */
+.overlay-door.close nav {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.1);
+  transform: translateY(-50%) translateX(-50%) scale(0.1);
+}
+
+@media screen and (max-height: 30.5rem) {
+  /* line 418, C:/xampp/htdocs/bs/sass/_define.scss */
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  /* line 422, C:/xampp/htdocs/bs/sass/_define.scss */
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+
+/* line 2, C:/xampp/htdocs/bs/sass/home.scss */
+.section {
+  position: relative;
+}
+
+/* line 4, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container {
+  width: 100%;
+  height: 35rem;
+  text-align: center;
+}
+
+/* line 8, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container div.center {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+/* line 12, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container div.center div.v-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 17, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container h2.title {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-family: 'GothamBook';
+  font-weight: 600;
+  color: #009ace;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 17, C:/xampp/htdocs/bs/sass/home.scss */
+  .section .title-container h2.title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 17, C:/xampp/htdocs/bs/sass/home.scss */
+  .section .title-container h2.title {
+    font-size: 2rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+/* line 34, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container h2.title i.ic-text {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ic-text.png") no-repeat;
+  vertical-align: baseline;
+}
+
+/* line 40, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container h2.title i.ic-text.left {
+  margin-right: 1rem;
+}
+
+/* line 43, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container h2.title i.ic-text.right {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 34, C:/xampp/htdocs/bs/sass/home.scss */
+  .section .title-container h2.title i.ic-text {
+    vertical-align: bottom;
+  }
+}
+
+/* line 51, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container p.sub-title {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 6rem;
+  line-height: 6.2rem;
+  text-transform: capitalize;
+  color: #6d6e71;
+  font-family: 'Baskerville Old Face';
+}
+
+/* line 59, C:/xampp/htdocs/bs/sass/home.scss */
+.section .title-container p.sub-title.margin-bot {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 51, C:/xampp/htdocs/bs/sass/home.scss */
+  .section .title-container p.sub-title {
+    max-width: 100%;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 51, C:/xampp/htdocs/bs/sass/home.scss */
+  .section .title-container p.sub-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 75, C:/xampp/htdocs/bs/sass/home.scss */
+.section01 {
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  background: url("../images/bg-section01.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 75, C:/xampp/htdocs/bs/sass/home.scss */
+  .section01 {
+    background-position: 45% 0%;
+  }
+}
+
+/* line 84, C:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+/* line 88, C:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center .v-center {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 94, C:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center img.ic-tenyear {
+  margin: 0 auto 6rem;
+}
+
+@media screen and (max-width: 650px) and (max-height: 400px) and (orientation: landscape) {
+  /* line 94, C:/xampp/htdocs/bs/sass/home.scss */
+  .section01 div.center img.ic-tenyear {
+    max-width: 250px;
+  }
+}
+
+/* line 100, C:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center a.readmore {
+  font-size: 1.3rem;
+  padding: 5px 20px;
+  color: #00b3d8;
+  border-radius: 20px;
+  border: 1px solid #00b3d8;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* line 108, C:/xampp/htdocs/bs/sass/home.scss */
+.section01 div.center a.readmore:hover {
+  background: #00b3d8;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 100, C:/xampp/htdocs/bs/sass/home.scss */
+  .section01 div.center a.readmore {
+    font-size: 1.2rem;
+  }
+}
+
+/* line 120, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 138, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 120, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section {
     height: auto;
   }
 }
 
-/* line 144, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 126, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .title-container {
   padding-left: 3rem;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 144, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 126, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .title-container {
     height: auto;
-    padding: 3rem 0;
   }
 }
 
-/* line 150, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 132, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .title-container .v-center {
   display: block;
   margin-top: 12rem;
 }
 
-/* line 154, D:/xampp/htdocs/bs/sass/home.scss */
+@media screen and (max-width: 767px) {
+  /* line 132, C:/xampp/htdocs/bs/sass/home.scss */
+  #about-section .title-container .v-center {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 132, C:/xampp/htdocs/bs/sass/home.scss */
+  #about-section .title-container .v-center {
+    margin-top: 3rem;
+  }
+}
+
+/* line 142, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .title-container h2.title {
   text-align: left;
 }
 
-/* line 157, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 145, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .title-container p.sub-title {
   max-width: none;
   text-align: left;
 }
 
-/* line 162, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 150, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container {
   height: calc(100% - 35rem);
   width: 100%;
@@ -803,13 +839,13 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 162, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 150, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container {
     height: auto;
   }
 }
 
-/* line 169, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 157, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .wrap-left {
   width: 65%;
   height: 100%;
@@ -819,7 +855,7 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 169, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 157, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .wrap-left {
     position: static;
     width: 100%;
@@ -828,7 +864,7 @@ div.clear {
   }
 }
 
-/* line 182, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 170, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-top, #about-section .img-container .right-bottom {
   position: absolute;
   width: 35%;
@@ -836,7 +872,7 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 182, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 170, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-top, #about-section .img-container .right-bottom {
     width: 100%;
     position: static;
@@ -844,7 +880,7 @@ div.clear {
   }
 }
 
-/* line 192, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 180, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-top {
   height: 55%;
   top: 0;
@@ -853,13 +889,13 @@ div.clear {
   min-height: 25rem;
 }
 
-/* line 199, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 187, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom {
   height: 45%;
   bottom: 0;
 }
 
-/* line 202, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 190, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper {
   background: #58595b;
   height: 100%;
@@ -867,7 +903,7 @@ div.clear {
   overflow: hidden;
 }
 
-/* line 207, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 195, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper a.link-agency {
   position: absolute;
   top: 10px;
@@ -880,43 +916,43 @@ div.clear {
   -moz-transition: all 0.3s;
 }
 
-/* line 215, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 203, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper a.link-agency:hover {
   color: #00b3d8;
   right: 5px;
   font-weight: bold;
 }
 
-/* line 221, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 209, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper {
   height: 100%;
 }
 
-/* line 223, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 211, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide {
   height: 100%;
 }
 
-/* line 225, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 213, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide {
   height: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 225, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 213, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide {
     padding: 3rem 0;
   }
 }
 
-/* line 230, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 218, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center {
   display: table;
   width: 100%;
   height: 100%;
 }
 
-/* line 234, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 222, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center {
   width: 100%;
   height: 100%;
@@ -926,13 +962,13 @@ div.clear {
   color: white;
 }
 
-/* line 241, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 229, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center img {
   margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 241, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 229, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center img {
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
@@ -941,7 +977,7 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 241, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 229, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center img {
     transform: scale(0.6);
     -webkit-transform: scale(0.6);
@@ -950,7 +986,7 @@ div.clear {
   }
 }
 
-/* line 255, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 243, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center h3.title-slide {
   font-family: 'GothamBook';
   font-size: 2rem;
@@ -959,20 +995,20 @@ div.clear {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 255, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 243, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center h3.title-slide {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 255, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 243, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center h3.title-slide {
     font-size: 1.6rem;
   }
 }
 
-/* line 267, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 255, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center p.sub-slide {
   font-family: 'GothamBook';
   font-size: 1.7rem;
@@ -980,20 +1016,20 @@ div.clear {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 267, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 255, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center p.sub-slide {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 267, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 255, C:/xampp/htdocs/bs/sass/home.scss */
   #about-section .img-container .right-bottom #about-swiper .swiper-wrapper .swiper-slide .each-slide .center .v-center p.sub-slide {
     font-size: 1.4rem;
   }
 }
 
-/* line 283, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 271, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-pagination-bullet {
   background: transparent;
   width: 12px;
@@ -1002,26 +1038,26 @@ div.clear {
   opacity: 1;
 }
 
-/* line 289, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 277, C:/xampp/htdocs/bs/sass/home.scss */
 #about-section .img-container .right-bottom #about-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #009ace;
   border-color: transparent;
 }
 
-/* line 299, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 287, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section {
   height: 100%;
   width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 299, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 287, C:/xampp/htdocs/bs/sass/home.scss */
   #service-section {
     height: auto;
   }
 }
 
-/* line 305, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 293, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services {
   height: 30%;
   min-height: 40rem;
@@ -1029,52 +1065,88 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 305, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 293, C:/xampp/htdocs/bs/sass/home.scss */
   #service-section #services {
     height: auto;
     padding: 3rem 0;
     min-height: auto;
+    margin-bottom: 0;
   }
 }
 
-/* line 314, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 304, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container {
   height: 100%;
 }
 
-/* line 316, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 306, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container .center {
   display: table;
   width: 100%;
   height: 100%;
 }
 
-/* line 320, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 310, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container .center .v-center {
   display: block;
   text-align: center;
   margin-top: 12rem;
 }
 
-/* line 325, D:/xampp/htdocs/bs/sass/home.scss */
+@media screen and (max-width: 767px) {
+  /* line 310, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #services .container .center .v-center {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 310, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #services .container .center .v-center {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 320, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #services .container .center .v-center p.sub-title {
+    line-height: 3.2rem;
+  }
+}
+
+/* line 324, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container .center .v-center p.sub-title span.sub-text {
   font-size: 5rem;
 }
 
-/* line 330, D:/xampp/htdocs/bs/sass/home.scss */
+@media screen and (max-width: 767px) {
+  /* line 324, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #services .container .center .v-center p.sub-title span.sub-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 324, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #services .container .center .v-center p.sub-title span.sub-text {
+    font-size: 2.8rem;
+  }
+}
+
+/* line 335, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container .center .v-center .wrap-button span {
   padding: 0 1.5rem;
   display: inline-block;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 330, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 335, C:/xampp/htdocs/bs/sass/home.scss */
   #service-section #services .container .center .v-center .wrap-button span {
     margin-bottom: 1.5rem;
   }
 }
 
-/* line 337, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 342, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container .center .v-center .wrap-button a.btn-me {
   font-size: 1.3rem;
   padding: 5px 20px;
@@ -1088,7 +1160,7 @@ div.clear {
   -moz-transition: all 0.3s;
 }
 
-/* line 346, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 351, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #services .container .center .v-center .wrap-button a.btn-me:hover {
   background: #009ace;
   color: white;
@@ -1096,68 +1168,53 @@ div.clear {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 337, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 342, C:/xampp/htdocs/bs/sass/home.scss */
   #service-section #services .container .center .v-center .wrap-button a.btn-me {
     font-size: 1.3rem;
     padding: 4px 18px;
   }
 }
 
-/* line 361, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 366, C:/xampp/htdocs/bs/sass/home.scss */
 #service-section #project {
   height: calc(100% - 40rem);
   min-height: 70%;
 }
 
-/* line 365, D:/xampp/htdocs/bs/sass/home.scss */
-#service-section #project .container h2.title {
-  margin-bottom: 5rem;
-}
-
-/* line 370, D:/xampp/htdocs/bs/sass/home.scss */
-#service-section #project .project-container .each-project {
-  text-align: left;
-}
-
-/* line 372, D:/xampp/htdocs/bs/sass/home.scss */
-#service-section #project .project-container .each-project img {
-  margin: 0 auto 2.2rem;
-}
-
-/* line 375, D:/xampp/htdocs/bs/sass/home.scss */
-#service-section #project .project-container .each-project h2.project-name {
-  font-size: 2.4rem;
-  font-weight: bold;
-  font-family: 'GothamBook';
-  margin-bottom: 2rem;
-  color: #6d6e71;
-}
-
 @media screen and (max-width: 767px) {
-  /* line 375, D:/xampp/htdocs/bs/sass/home.scss */
-  #service-section #project .project-container .each-project h2.project-name {
-    font-size: 2rem;
+  /* line 366, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #project {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 366, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #project {
     margin-bottom: 1.5rem;
   }
 }
 
-/* line 386, D:/xampp/htdocs/bs/sass/home.scss */
-#service-section #project .project-container .each-project p.description {
-  font-family: 'GothamBook';
-  font-size: 1.6rem;
-  color: #6d6e71;
-  line-height: 2rem;
+/* line 376, C:/xampp/htdocs/bs/sass/home.scss */
+#service-section #project .container h2.title {
+  margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 386, D:/xampp/htdocs/bs/sass/home.scss */
-  #service-section #project .project-container .each-project p.description {
-    font-size: 1.4rem;
-    margin-bottom: 1.8rem;
+  /* line 376, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #project .container h2.title {
+    margin-bottom: 3.5rem;
   }
 }
 
-/* line 402, D:/xampp/htdocs/bs/sass/home.scss */
+@media screen and (max-width: 480px) {
+  /* line 376, C:/xampp/htdocs/bs/sass/home.scss */
+  #service-section #project .container h2.title {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* line 390, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area {
   width: 100%;
   height: 500px;
@@ -1166,20 +1223,20 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 402, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 390, C:/xampp/htdocs/bs/sass/home.scss */
   .background-area {
     height: 400px;
   }
 }
 
-/* line 410, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 398, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 414, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 402, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center {
   display: table-cell;
   height: 100%;
@@ -1188,7 +1245,7 @@ div.clear {
   text-align: center;
 }
 
-/* line 420, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 408, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center h2.title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
@@ -1199,7 +1256,7 @@ div.clear {
   vertical-align: middle;
 }
 
-/* line 429, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 417, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center h2.title i.ic-text {
   display: inline-block;
   width: 25px;
@@ -1208,33 +1265,33 @@ div.clear {
   vertical-align: middle;
 }
 
-/* line 435, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 423, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center h2.title i.ic-text.left {
   margin-right: 1rem;
 }
 
-/* line 438, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 426, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center h2.title i.ic-text.right {
   margin-left: 1rem;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 420, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 408, C:/xampp/htdocs/bs/sass/home.scss */
   .background-area .center .v-center h2.title {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 420, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 408, C:/xampp/htdocs/bs/sass/home.scss */
   .background-area .center .v-center h2.title {
     font-size: 2rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.5rem;
   }
 }
 
-/* line 451, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 439, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center p.sub-title {
   max-width: 90%;
   margin: 0 auto 4rem;
@@ -1246,23 +1303,24 @@ div.clear {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 451, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 439, C:/xampp/htdocs/bs/sass/home.scss */
   .background-area .center .v-center p.sub-title {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
     margin-bottom: 2.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 451, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 439, C:/xampp/htdocs/bs/sass/home.scss */
   .background-area .center .v-center p.sub-title {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 2.8rem;
+    line-height: 3rem;
   }
 }
 
-/* line 469, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 458, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center a.readmore {
   font-size: 1.5rem;
   padding: 8px 25px;
@@ -1275,18 +1333,162 @@ div.clear {
   -moz-transition: all 0.3s;
 }
 
-/* line 477, D:/xampp/htdocs/bs/sass/home.scss */
+/* line 466, C:/xampp/htdocs/bs/sass/home.scss */
 .background-area .center .v-center a.readmore:hover {
   background: #00b3d8;
   color: white;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 469, D:/xampp/htdocs/bs/sass/home.scss */
+  /* line 458, C:/xampp/htdocs/bs/sass/home.scss */
   .background-area .center .v-center a.readmore {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 5px 18px;
   }
+}
+
+/*---------------*/
+/***** EFFECT *****/
+/*---------------*/
+/* line 483, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all {
+  position: relative;
+}
+
+/* line 485, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all figure {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 489, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all figure img {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 493, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all figure figcaption {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 501, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all figure figcaption h4.title {
+  font-size: 3rem;
+  font-family: 'GothamBook';
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 508, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all figure figcaption p.description {
+  font-size: 1.4rem;
+  font-family: 'Baskerville Old Face';
+  color: white;
+}
+
+/* line 514, C:/xampp/htdocs/bs/sass/home.scss */
+.wrap-all figure a.viewmore {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 529, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba {
+  background: #58595b;
+}
+
+/* line 533, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* line 539, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba:hover img {
+  opacity: 0.4;
+}
+
+/* line 543, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 556, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 563, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+/* line 570, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba h4.title {
+  padding-top: 40%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+
+/* line 578, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba p {
+  padding: 20px 3.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 587, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 594, C:/xampp/htdocs/bs/sass/home.scss */
+figure.effect-bubba:hover h4.title,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes ani-btn {
