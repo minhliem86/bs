@@ -38,7 +38,6 @@ body.page-level-2{
 					-webkit-transform:rotate(0deg);
 					-moz-transform:rotate(0deg);
 					@include transition(all 0.3s);
-
 				}
 			}
 		}
@@ -55,35 +54,29 @@ body.page-level-2{
 		text-transform:uppercase;
 		vertical-align:bottom;
 		@include media(767px){
-			font-size:2.5rem;
+			font-size:1.8rem;
 			margin-bottom:3rem;
-		}
-		@include media(480px){
-			font-size:2rem;
-			margin-bottom:2.8rem;
 		}
 
 		i.ic-text{
 			display:inline-block;
-			width:25px;
-			height:25px;
+			width:16px;
+			height:16px;
 			background:url('../images/ic-text.png')no-repeat;
-			vertical-align:bottom;
+			vertical-align:baseline;
 			&.left{
 				margin-right:1rem;
 			}
 			&.right{
 				margin-left:1rem;
 			}
-			@include media(480px){
-				vertical-align:bottom;
-			}
+			
 		}
 	}
 	h3.slogan{
 		font-size:4rem;
 		padding-bottom:3.5rem;
-		margin-bottom:3rem;
+		margin-bottom:3.5rem;
 		@include fontbaskvill;
 		color:$text01;
 		position:relative;
@@ -102,6 +95,13 @@ body.page-level-2{
 			-webkit-transform:translateX(-50%);
 			-moz-transform:translateX(-50%);
 		}
+		@include media(767px){
+			font-size:2.5rem;
+			&:after{
+				max-width:auto;
+				width:80%;
+			}
+		}
 	}
 }
 #section01{
@@ -117,7 +117,7 @@ body.page-level-2{
 		background-size:cover;
 		@include media(991px){
 			height:auto;
-			min-height:350px;
+			min-height:300px;
 		}
 	}
 	.above-section01{
@@ -149,8 +149,11 @@ body.page-level-2{
 				@include fontbase;
 				color:$text01;
 				font-size:1.6rem;
-				margin-bottom:1.8rem;
+				margin-bottom:1.2rem;
 				text-transform:uppercase;
+				@include media(767px){
+					font-size:1.4rem;
+				}
 			}
 			p.addr{
 				margin-bottom:0;
@@ -179,6 +182,9 @@ body.page-level-2{
 				font-weight:600;
 				color:$xanhduong;
 				text-transform:uppercase;
+				@include media(767px){
+					font-size:1.8rem;
+				}
 			}
 			fieldset{
 				margin:0 auto 2rem;
@@ -191,6 +197,9 @@ body.page-level-2{
 					text-align:center;
 					border:none;
 					text-transform:uppercase;
+					@include media(767px){
+						font-size:1.6rem;
+					}
 				}
 			}
 			input[type="checkbox"]{
@@ -219,18 +228,12 @@ body.page-level-2{
 			}
 			fieldset#form-service{
 				width:60%;
-				@include media(1199px){
-					width:80%
-				}
 				.wrap-top{
 					margin:0 auto 2rem;
-					@include media(991px){
-						width:100%;
-					}
 					div.top{
 						width:calc(100%/3);
 						float:left;
-						padding:0 2rem;
+						padding:0 0.8rem;
 					}
 				}
 				.wrap-bottom{
@@ -242,19 +245,30 @@ body.page-level-2{
 					.bottom:nth-child(1){
 						width:calc(100%/3*2);
 						float:left;
-						padding:0 2rem;
+						padding:0 0.8rem;
 					}
 					.bottom:nth-child(2){
 						@extend .bottom:nth-child(1);
 						width:calc(100%/3*1);
 					}
 				}
+				@include media(767px){
+					width:80%;
+				}
+				@include media(480px){
+					width:90%;
+					.wrap-top{
+						.top{
+							width:100%;
+							float:none;
+							padding:0;
+							margin-bottom:1rem;
+						}
+					}
+				}
 			}
 			fieldset#form-time{
 				width:50%;
-				@include media(991px){
-					width:100%;
-				}
 				.wrap-time{
 					width:calc(100%/6);
 					padding:0 0.8rem;
@@ -264,21 +278,30 @@ body.page-level-2{
 						margin-bottom:0;
 					}
 				}
+				@include media(767px){
+					width:80%
+				}
+				@include media(480px){
+					width:90%
+				}
 			}
 			fieldset#budget{
 				width:60%;
-				@include media(991px){
-					width:100%;
-				}
 				.wrap-budget-input{
 					.wrap-budget{
 						width:calc(100%/5);
-						padding:0 1.5rem;
+						padding:0 0.8rem;
 						float:left;
 					}
 					.wrap-budget:last-child(){
 						width:calc(100%/5*2);
 					}
+				}
+				@include media(767px){
+					width:80%
+				}
+				@include media(480px){
+					width:90%
 				}
 			}
 			fieldset#form-text{

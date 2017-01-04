@@ -595,140 +595,7 @@ i.ic-scrolldown {
   }
 }
 
-/* line 3, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area {
-  width: 100%;
-  height: 500px;
-  background: url("../images/bg-section3.jpg") no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 3, D:/xampp/htdocs/bs/sass/agency.scss */
-  .background-area {
-    height: 400px;
-  }
-}
-
-/* line 11, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
-/* line 15, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center {
-  display: table-cell;
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* line 21, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center h2.title {
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  font-family: 'GothamBook';
-  font-weight: 600;
-  color: #009ace;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
-/* line 30, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center h2.title i.ic-text {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background: url("../images/ic-text.png") no-repeat;
-  vertical-align: middle;
-}
-
-/* line 36, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center h2.title i.ic-text.left {
-  margin-right: 1rem;
-}
-
-/* line 39, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center h2.title i.ic-text.right {
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 21, D:/xampp/htdocs/bs/sass/agency.scss */
-  .background-area .center .v-center h2.title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 21, D:/xampp/htdocs/bs/sass/agency.scss */
-  .background-area .center .v-center h2.title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-/* line 52, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center p.sub-title {
-  max-width: 90%;
-  margin: 0 auto 4rem;
-  font-size: 6rem;
-  font-family: 'Baskerville Old Face';
-  line-height: 6.5rem;
-  text-transform: normal;
-  color: white;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 52, D:/xampp/htdocs/bs/sass/agency.scss */
-  .background-area .center .v-center p.sub-title {
-    font-size: 3.5rem;
-    line-height: 4rem;
-    margin-bottom: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* line 52, D:/xampp/htdocs/bs/sass/agency.scss */
-  .background-area .center .v-center p.sub-title {
-    font-size: 2.2rem;
-    margin-bottom: 2.8rem;
-    line-height: 3rem;
-  }
-}
-
-/* line 71, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center a.readmore {
-  font-size: 1.5rem;
-  padding: 8px 25px;
-  color: #00b3d8;
-  border-radius: 20px;
-  border: 1px solid #00b3d8;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-
-/* line 79, D:/xampp/htdocs/bs/sass/agency.scss */
-.background-area .center .v-center a.readmore:hover {
-  background: #00b3d8;
-  color: white;
-}
-
-@media screen and (max-width: 480px) {
-  /* line 71, D:/xampp/htdocs/bs/sass/agency.scss */
-  .background-area .center .v-center a.readmore {
-    font-size: 1.2rem;
-    padding: 5px 18px;
-  }
-}
-
-/* line 94, D:/xampp/htdocs/bs/sass/agency.scss */
+/* line 6, D:/xampp/htdocs/bs/sass/product.scss */
 body.page-level-2 .header button.btn-wrap-menu span.text-menu {
   font-size: 1.8rem;
   font-family: 'GothamBook';
@@ -740,13 +607,13 @@ body.page-level-2 .header button.btn-wrap-menu span.text-menu {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 94, D:/xampp/htdocs/bs/sass/agency.scss */
+  /* line 6, D:/xampp/htdocs/bs/sass/product.scss */
   body.page-level-2 .header button.btn-wrap-menu span.text-menu {
     font-size: 1.5rem;
   }
 }
 
-/* line 106, D:/xampp/htdocs/bs/sass/agency.scss */
+/* line 18, D:/xampp/htdocs/bs/sass/product.scss */
 body.page-level-2 .header button.btn-wrap-menu span.icon-bar {
   display: inline-block;
   vertical-align: middle;
@@ -761,7 +628,7 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar {
   -moz-transition: all 0.3s;
 }
 
-/* line 116, D:/xampp/htdocs/bs/sass/agency.scss */
+/* line 28, D:/xampp/htdocs/bs/sass/product.scss */
 body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-level-2 .header button.btn-wrap-menu span.icon-bar:after {
   content: '';
   display: inline-block;
@@ -779,66 +646,41 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-l
   -moz-transition: all 0.3s;
 }
 
-/* line 136, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 {
+/* line 46, D:/xampp/htdocs/bs/sass/product.scss */
+.section {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 136, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 {
+  /* line 46, D:/xampp/htdocs/bs/sass/product.scss */
+  .section {
     height: auto;
   }
 }
 
-/* line 142, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .title-container {
-  width: 100%;
-  height: 30rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 142, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .title-container {
-    height: auto;
-  }
-}
-
-/* line 148, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .title-container div.wrap-title {
-  padding-top: 16rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 148, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .title-container div.wrap-title {
-    padding-top: 15rem;
-  }
-}
-
-/* line 153, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .title-container div.wrap-title h2.title {
+/* line 52, D:/xampp/htdocs/bs/sass/product.scss */
+.section h1.title, .section h2.title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.2rem;
   font-size: 2.5rem;
   font-family: 'GothamBook';
   font-weight: 600;
   color: #009ace;
   text-transform: uppercase;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 153, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .title-container div.wrap-title h2.title {
+  /* line 52, D:/xampp/htdocs/bs/sass/product.scss */
+  .section h1.title, .section h2.title {
     font-size: 1.8rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 3rem;
   }
 }
 
-/* line 166, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .title-container div.wrap-title h2.title i.ic-text {
+/* line 65, D:/xampp/htdocs/bs/sass/product.scss */
+.section h1.title i.ic-text, .section h2.title i.ic-text {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -846,451 +688,244 @@ body.page-level-2 .header button.btn-wrap-menu span.icon-bar:before, body.page-l
   vertical-align: baseline;
 }
 
-/* line 172, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .title-container div.wrap-title h2.title i.ic-text.left {
+/* line 71, D:/xampp/htdocs/bs/sass/product.scss */
+.section h1.title i.ic-text.left, .section h2.title i.ic-text.left {
   margin-right: 1rem;
 }
 
-/* line 175, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .title-container div.wrap-title h2.title i.ic-text.right {
+/* line 74, D:/xampp/htdocs/bs/sass/product.scss */
+.section h1.title i.ic-text.right, .section h2.title i.ic-text.right {
   margin-left: 1rem;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 166, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .title-container div.wrap-title h2.title i.ic-text {
+  /* line 65, D:/xampp/htdocs/bs/sass/product.scss */
+  .section h1.title i.ic-text, .section h2.title i.ic-text {
     vertical-align: bottom;
   }
 }
 
-/* line 185, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .content01 {
+/* line 82, D:/xampp/htdocs/bs/sass/product.scss */
+.section p.description {
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: 'Baskerville Old Face';
+  color: #6d6e71;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 82, D:/xampp/htdocs/bs/sass/product.scss */
+  .section p.description {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+/* line 96, D:/xampp/htdocs/bs/sass/product.scss */
+.section01 .title-container {
+  height: 35rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 96, D:/xampp/htdocs/bs/sass/product.scss */
+  .section01 .title-container {
+    height: 28rem;
+  }
+}
+
+/* line 101, D:/xampp/htdocs/bs/sass/product.scss */
+.section01 .title-container .wrap-title {
+  padding-top: 20rem;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 101, D:/xampp/htdocs/bs/sass/product.scss */
+  .section01 .title-container .wrap-title {
+    padding-top: 15rem;
+  }
+}
+
+/* line 109, D:/xampp/htdocs/bs/sass/product.scss */
+.section01 .content-section {
   width: 100%;
-  height: calc(100% - 30rem);
-  background: url("../images/agency/bg01.jpg") no-repeat;
+  height: calc(100% - 35rem);
+  background: url("../images/product/bg-product.jpg") no-repeat;
   background-size: cover;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 185, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .content01 {
+  /* line 109, D:/xampp/htdocs/bs/sass/product.scss */
+  .section01 .content-section {
     height: auto;
-    min-height: 400px;
+    min-height: 30rem;
   }
 }
 
-/* line 194, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .content01 .fullheight {
-  min-height: 100%;
-  position: relative;
-}
-
-/* line 197, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .content01 .fullheight .wrap-content {
-  position: absolute;
-  top: 12rem;
-  left: 10rem;
-  max-width: 45rem;
-  text-align: center;
+/* line 121, D:/xampp/htdocs/bs/sass/product.scss */
+.section02, .section03, .section04 {
+  padding-top: 14rem;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 197, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .content01 .fullheight .wrap-content {
-    position: static;
-    top: auto;
-    left: auto;
-    max-width: auto;
-    padding: 1rem 1.5rem;
+  /* line 121, D:/xampp/htdocs/bs/sass/product.scss */
+  .section02, .section03, .section04 {
+    padding-top: 6rem;
   }
 }
 
-/* line 210, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .content01 .fullheight .wrap-content p.big-text {
-  font-size: 2.2rem;
+/* line 126, D:/xampp/htdocs/bs/sass/product.scss */
+.section02 .title-container, .section03 .title-container, .section04 .title-container {
+  height: 11rem;
   margin-bottom: 2rem;
-  font-family: 'GothamBook';
-  color: white;
-  text-transform: uppercase;
+}
+
+/* line 132, D:/xampp/htdocs/bs/sass/product.scss */
+.section04 {
+  margin-bottom: 9rem;
+}
+
+/* line 135, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section {
+  width: 100%;
+  height: calc(100% - 11rem);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 210, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .content01 .fullheight .wrap-content p.big-text {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+  /* line 135, D:/xampp/htdocs/bs/sass/product.scss */
+  .bottom-section {
+    height: 40rem;
   }
 }
 
-/* line 221, D:/xampp/htdocs/bs/sass/agency.scss */
-.section01 .content01 .fullheight .wrap-content p.small-text {
-  font-family: 'Baskerville Old Face';
-  font-size: 1.7rem;
-  color: white;
-  line-height: 2.5rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 221, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section01 .content01 .fullheight .wrap-content p.small-text {
-    font-size: 1.5rem;
-    line-height: 2.3rem;
-  }
-}
-
-/* line 235, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 {
-  padding-top: 5rem;
-}
-
-/* line 237, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .top-section {
-  margin-bottom: 4rem;
-}
-
-/* line 239, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .top-section h2.title {
-  text-align: center;
-  font-size: 4rem;
-  line-height: 4.2rem;
-  color: #6d6e71;
-  font-family: 'Baskerville Old Face';
-  margin-bottom: 7rem;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 239, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .top-section h2.title {
-    font-size: 2.3rem;
-    line-height: 3rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 254, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .top-section .each-vision {
-    margin-bottom: 2.5rem;
-  }
-}
-
-/* line 258, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .top-section .each-vision h3.title-level-2 {
-  font-family: 'GothamBook';
-  color: #009ace;
-  font-size: 2.5rem;
-  line-height: 2.8rem;
-  font-weight: 600;
-  margin-bottom: 2.5rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 258, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .top-section .each-vision h3.title-level-2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-}
-
-/* line 270, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .top-section .each-vision p.description {
-  font-size: 1.8rem;
-  font-family: 'GothamBook';
-  color: #6d6e71;
-  line-height: 2.2rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 270, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .top-section .each-vision p.description {
-    font-size: 1.5rem;
-  }
-}
-
-/* line 281, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section {
-  height: 70rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 281, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section {
-    height: auto;
-  }
-}
-
-/* line 286, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight {
+/* line 141, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight {
   height: 100%;
-  min-height: 100%;
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 286, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section .fullheight {
-    height: auto;
-    min-height: auto;
-  }
-}
-
-/* line 294, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .left-img {
+/* line 144, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .left-img {
   position: absolute;
-  height: 100%;
-  width: 55%;
-  padding-right: 1rem;
-  left: 0;
   top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  padding-right: 1rem;
 }
 
-/* line 301, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .left-img .img-container {
+/* line 151, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .left-img .img-container {
   width: 100%;
-  min-height: 100%;
-  background: url("../images/agency/img01.jpg") no-repeat;
+  height: 100%;
+  background: url("../images/product/img01-product01.jpg") no-repeat;
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 294, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section .fullheight .left-img {
-    position: static;
-    height: 20rem;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-}
-
-/* line 316, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img {
+/* line 158, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img {
   position: absolute;
+  right: 0;
   width: 45%;
   height: calc(100%/3);
-  right: 0;
 }
 
-/* line 321, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img .img-container {
+/* line 163, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img .img-container {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 316, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section .fullheight .right-img {
-    position: static;
-    height: 20rem;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-}
-
-/* line 333, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img.right-top-img {
-  top: 0;
+/* line 168, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img.right-top-img {
   padding-bottom: 1rem;
+  top: 0;
 }
 
-/* line 336, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img.right-top-img .img-container {
-  background-image: url("../images/agency/img02.jpg");
+/* line 171, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img.right-top-img .img-container {
+  background-image: url("../images/product/img02-product01.jpg");
 }
 
-@media screen and (max-width: 767px) {
-  /* line 333, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section .fullheight .right-img.right-top-img {
-    padding: 0;
-  }
-}
-
-/* line 343, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img.right-bottom-img {
+/* line 175, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img.right-bottom-img {
   padding-top: 1rem;
   bottom: 0;
 }
 
-/* line 346, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img.right-bottom-img .img-container {
-  background-image: url("../images/agency/img04.jpg");
+/* line 178, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img.right-bottom-img .img-container {
+  background-image: url("../images/product/img04-product01.jpg");
 }
 
-@media screen and (max-width: 767px) {
-  /* line 343, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section .fullheight .right-img.right-bottom-img {
-    padding: 0;
-  }
-}
-
-/* line 353, D:/xampp/htdocs/bs/sass/agency.scss */
-.section02 .bottom-section .fullheight .right-img.right-middle-img {
-  background-image: url("../images/agency/img03.jpg");
+/* line 182, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img.right-middle-img {
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
 }
 
-@media screen and (max-width: 767px) {
-  /* line 353, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section02 .bottom-section .fullheight .right-img.right-middle-img {
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-  }
+/* line 187, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .right-img.right-middle-img .img-container {
+  background-image: url("../images/product/img03-product01.jpg");
 }
 
-/* line 371, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03, .section04 {
-  padding-top: 5rem;
-  margin-bottom: 4rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 371, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section03, .section04 {
-    padding-top: 0;
-  }
-}
-
-/* line 378, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container, .section04 .title-container {
-  margin-bottom: 3rem;
-}
-
-/* line 381, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container .wrap-title h2.title, .section04 .title-container .wrap-title h2.title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  font-family: 'GothamBook';
-  font-weight: 600;
-  color: #009ace;
-  text-transform: uppercase;
-  vertical-align: baseline;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 381, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section03 .title-container .wrap-title h2.title, .section04 .title-container .wrap-title h2.title {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-  }
-}
-
-/* line 394, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container .wrap-title h2.title i.ic-text, .section04 .title-container .wrap-title h2.title i.ic-text {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: url("../images/ic-text.png") no-repeat;
-  vertical-align: baseline;
-}
-
-/* line 400, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container .wrap-title h2.title i.ic-text.left, .section04 .title-container .wrap-title h2.title i.ic-text.left {
-  margin-right: 1rem;
-}
-
-/* line 403, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container .wrap-title h2.title i.ic-text.right, .section04 .title-container .wrap-title h2.title i.ic-text.right {
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 480px) {
-  /* line 394, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section03 .title-container .wrap-title h2.title i.ic-text, .section04 .title-container .wrap-title h2.title i.ic-text {
-    vertical-align: bottom;
-  }
-}
-
-/* line 411, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container .wrap-title p.sub-title, .section04 .title-container .wrap-title p.sub-title {
-  font-size: 4rem;
-  line-height: 4.2rem;
-  text-transform: capitalize;
-  color: #6d6e71;
-  text-align: center;
-  font-family: 'Baskerville Old Face';
-  text-transform: uppercase;
-}
-
-/* line 419, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .title-container .wrap-title p.sub-title.margin-bot, .section04 .title-container .wrap-title p.sub-title.margin-bot {
-  margin-bottom: 3rem;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 411, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section03 .title-container .wrap-title p.sub-title, .section04 .title-container .wrap-title p.sub-title {
-    font-size: 2rem;
-    line-height: 2.6rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 430, D:/xampp/htdocs/bs/sass/agency.scss */
-  .section03 .content03 .each-service, .section04 .content03 .each-service {
-    margin-bottom: 2rem;
-  }
-}
-
-/* line 434, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .content03 .each-service img.img-service, .section04 .content03 .each-service img.img-service {
-  margin: 0 auto 1.5rem;
-}
-
-/* line 437, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .content03 .each-service h4.name-service, .section04 .content03 .each-service h4.name-service {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
-  font-family: 'GothamBook';
-  position: relative;
-  color: #6d6e71;
-  text-align: center;
-  font-weight: 600;
-}
-
-/* line 447, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .content03 .each-service h4.name-service:after, .section04 .content03 .each-service h4.name-service:after {
-  content: '';
-  display: block;
+/* line 193, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .top-left, .bottom-section .fullheight .bottom-left, .bottom-section .fullheight .top-right, .bottom-section .fullheight .bottom-right {
   position: absolute;
-  height: 1px;
-  width: 100px;
-  background: #6d6e71;
-  margin: 0 auto;
-  left: 50%;
+  width: 55%;
+  height: 35%;
+  top: 0;
+  left: 0;
+  padding: 0 1rem 0 0;
+}
+
+/* line 200, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .top-left .img-container, .bottom-section .fullheight .bottom-left .img-container, .bottom-section .fullheight .top-right .img-container, .bottom-section .fullheight .bottom-right .img-container {
+  background-image: url("../images/product/img01-product02.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 207, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .bottom-left {
   bottom: 0;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
+  top: auto;
+  height: 65%;
+  padding: 1rem 1rem 0 0;
 }
 
-/* line 463, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .content03 .each-service .description ul.list-des, .section04 .content03 .each-service .description ul.list-des {
-  display: block;
-  list-style: none;
+/* line 213, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .bottom-left .img-container {
+  background-image: url("../images/product/img02-product02.jpg");
 }
 
-/* line 466, D:/xampp/htdocs/bs/sass/agency.scss */
-.section03 .content03 .each-service .description ul.list-des li, .section04 .content03 .each-service .description ul.list-des li {
-  margin-bottom: 0.3rem;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #6d6e71;
-  font-family: 'GothamBook';
+/* line 217, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .top-right, .bottom-section .fullheight .bottom-right {
+  left: auto;
+  right: 0;
+  width: 45%;
+  padding: 0;
 }
 
-/* line 481, D:/xampp/htdocs/bs/sass/agency.scss */
-.section04 img.logo-partner {
-  border: 3px solid #86878b;
-  margin: 0 auto;
-  box-shadow: 0 0 3px #a0a1a4;
+/* line 223, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .top-right .img-container, .bottom-section .fullheight .bottom-right .img-container {
+  background-image: url("../images/product/img03-product02.jpg");
+}
+
+/* line 227, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .bottom-right {
+  top: auto;
+  bottom: 0;
+  height: 65%;
+  padding: 1rem 0 0 0;
+}
+
+/* line 233, D:/xampp/htdocs/bs/sass/product.scss */
+.bottom-section .fullheight .bottom-right .img-container {
+  background-image: url("../images/product/img04-product02.jpg");
 }

@@ -136,11 +136,20 @@ body.page-level-2{
 .section01{
 	width:100%;
 	height:100%;
+	@include media(767px){
+		height:auto;
+	}
 	.title-container{
 		width:100%;
 		height:30rem;
+		@include media(767px){
+			height:auto;
+		}
 		div.wrap-title{
 			padding-top:16rem;
+			@include media(767px){
+				padding-top: 15rem;
+			}
 			h2.title{
 				text-align:center;
 				margin-bottom:3rem;
@@ -149,22 +158,17 @@ body.page-level-2{
 				font-weight:600;
 				color:$xanhduong;
 				text-transform:uppercase;
-				vertical-align:bottom;
+				vertical-align:baseline;
 				@include media(767px){
-					font-size:2.5rem;
-					margin-bottom:3rem;
+					font-size:1.8rem;
+					margin-bottom:2.2rem;
 				}
-				@include media(480px){
-					font-size:2rem;
-					margin-bottom:2.8rem;
-				}
-
 				i.ic-text{
 					display:inline-block;
-					width:25px;
-					height:25px;
+					width:16px;
+					height:16px;
 					background:url('../images/ic-text.png')no-repeat;
-					vertical-align:bottom;
+					vertical-align:baseline;
 					&.left{
 						margin-right:1rem;
 					}
@@ -183,6 +187,10 @@ body.page-level-2{
 		height:calc(100% - 30rem);
 		background:url('../images/agency/bg01.jpg')no-repeat;
 		background-size:cover;
+		@include media(767px){
+			height:auto;
+			min-height:400px;
+		}
 		.fullheight{
 			min-height:100%;
 			position:relative;
@@ -192,18 +200,33 @@ body.page-level-2{
 				left:10rem;
 				max-width:45rem;
 				text-align:center;
+				@include media(767px){
+					position:static;
+					top:auto;
+					left:auto;
+					max-width:auto;
+					padding:1rem 1.5rem;
+				}
 				p.big-text{
 					font-size:2.2rem;
 					margin-bottom:2rem;
 					@include fontbase;
 					color:white;
 					text-transform:uppercase;
+					@include media(767px){
+						font-size:2rem;
+						margin-bottom:1.5rem;
+					}
 				}
 				p.small-text{
 					@include fontbaskvill;
 					font-size:1.7rem;
 					color:white;
 					line-height:2.5rem;
+					@include media(767px){
+						font-size:1.5rem;
+						line-height:2.3rem;
+					}
 				}
 			}
 		}
@@ -221,9 +244,17 @@ body.page-level-2{
 			@include fontbaskvill;
 			margin-bottom:7rem;
 			text-transform:uppercase;
+			@include media(767px){
+				font-size:2.3rem;
+				line-height:3rem;
+				margin-bottom:3rem;
+			}
 		}
 
 		.each-vision{
+			@include media(767px){
+				margin-bottom:2.5rem;
+			}
 			h3.title-level-2{
 				@include fontbase;
 				color:$xanhduong;
@@ -231,46 +262,93 @@ body.page-level-2{
 				line-height:2.8rem;
 				font-weight:600;
 				margin-bottom:2.5rem;
+				@include media(767px){
+					font-size:2rem;
+					margin-bottom:1rem;
+				}
 			}
 			p.description{
 				font-size:1.8rem;
 				@include fontbase;
 				color:$text01;
 				line-height:2.2rem;
+				@include media(767px){
+					font-size:1.5rem;
+				}
 			}
 		}
 	}
 	.bottom-section{
 		height:70rem;
 		@include media(767px){
-			height:40px;
+			height:auto;
 		}
 		.fullheight{
 			height:100%;
 			min-height:100%;
 			position:relative;
+			@include media(767px){
+				height:auto;
+				min-height:auto;
+			}
 			.left-img{
 				position:absolute;
-				min-height:100%;
-				width:53%;
+				height:100%;
+				width:55%;
+				padding-right:1rem;
 				left:0;
 				top:0;
-				background:url('../images/agency/img01.jpg')no-repeat;
-				background-size:cover;
+				.img-container{
+					width:100%;
+					min-height:100%;
+					background:url('../images/agency/img01.jpg')no-repeat;
+					background-size:cover;
+				}
+				@include media(767px){
+					position:static;
+					height:20rem;
+					width:100%;
+					padding:0;
+					margin-bottom:1rem;
+
+				}
 			}
 			.right-img{
 				position:absolute;
 				width:45%;
-				height:32%;
+				height:calc(100%/3);
 				right:0;
-				background-size:cover;
+				.img-container{
+					width:100%;
+					height:100%;
+					background-size:cover;
+				}
+				@include media(767px){
+					position:static;
+					height:20rem;
+					width:100%;
+					padding:0;
+					margin-bottom:1rem;
+				}
 				&.right-top-img{
-					background-image:url('../images/agency/img02.jpg');
 					top:0;
+					padding-bottom:1rem;
+					.img-container{
+						background-image:url('../images/agency/img02.jpg');
+					}
+					@include media(767px){
+						padding:0;
+					}
 				}
 				&.right-bottom-img{
-					background-image:url('../images/agency/img04.jpg');
+					padding-top:1rem;
 					bottom:0;
+					.img-container{
+						background-image:url('../images/agency/img04.jpg');
+					}
+					@include media(767px){
+						padding:0;
+					}
 				}
 				&.right-middle-img{
 					background-image:url('../images/agency/img03.jpg');
@@ -278,6 +356,11 @@ body.page-level-2{
 					transform:translateY(-50%);
 					-webkit-transform:translateY(-50%);
 					-moz-transform:translateY(-50%);
+					@include media(767px){
+						transform:none;
+						-webkit-transform:none;
+						-moz-transform:none;
+					}
 				}
 			}
 		}
@@ -288,6 +371,10 @@ body.page-level-2{
 .section03, .section04{
 	padding-top:5rem;
 	margin-bottom:4rem;
+	@include media(767px){
+		padding-top:0;
+		
+	}
 	.title-container{
 		margin-bottom:3rem;
 		.wrap-title{
@@ -299,22 +386,17 @@ body.page-level-2{
 				font-weight:600;
 				color:$xanhduong;
 				text-transform:uppercase;
-				vertical-align:bottom;
+				vertical-align:baseline;
 				@include media(767px){
-					font-size:2.5rem;
+					font-size:1.8rem;
 					margin-bottom:3rem;
 				}
-				@include media(480px){
-					font-size:2rem;
-					margin-bottom:2.8rem;
-				}
-
 				i.ic-text{
 					display:inline-block;
-					width:25px;
-					height:25px;
+					width:16px;
+					height:16px;
 					background:url('../images/ic-text.png')no-repeat;
-					vertical-align:bottom;
+					vertical-align:baseline;
 					&.left{
 						margin-right:1rem;
 					}
@@ -338,19 +420,17 @@ body.page-level-2{
 					margin-bottom:3rem;
 				}
 				@include media(767px){
-					max-width:100%;
-					font-size:2.5rem;
-					line-height:2.2rem;
-				}
-				@include media(480px){
-					font-size:2rem;
-					margin-bottom:2rem;
-				}
+						font-size:2rem;
+						line-height:2.6rem;
+					}
 			}
 		}
 	}
 	.content03{
 		.each-service{
+			@include media(767px){
+				margin-bottom:2rem;
+			}
 			img.img-service{
 				margin:0 auto 1.5rem;
 			}
