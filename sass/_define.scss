@@ -159,6 +159,9 @@ i.ic-scrolldown{
 	@media screen and (max-width:650px) and (max-height:400px) and (orientation: landscape){
 		bottom:5%;
 	}
+	@include media(767px){
+		display: none;
+	}
 }
 
 
@@ -331,7 +334,6 @@ i.ic-scrolldown{
 			display: inline-block;
 			height: 100%;
 			position: relative;
-			margin-top:30%;
 			li{
 				display: block;
 				height: calc(100% / 8);

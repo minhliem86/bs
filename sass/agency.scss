@@ -2,22 +2,23 @@
 
 .background-area{
 	width:100%;
-	height:500px;
+	height:700px;
 	background:url('../images/bg-section3.jpg')no-repeat;
 	background-size:cover;
+	@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+		height:500px;
+	}
 	@include media(767px){
 		height:400px;
 	}
 	.center{
-		display:table;
 		height:100%;
 		width:100%;
 		.v-center{
-			display:table-cell;
 			height:100%;
 			width:100%;
-			vertical-align:middle;
 			text-align:center;
+			padding-top:12.5rem;
 			h2.title{
 				margin-bottom:3rem;
 				font-size:2.5rem;
@@ -26,7 +27,6 @@
 				color:$xanhduong;
 				text-transform:uppercase;
 				vertical-align:middle;
-
 				i.ic-text{
 					display:inline-block;
 					width:25px;
@@ -52,18 +52,22 @@
 			p.sub-title{
 				max-width:90%;
 				margin:0 auto 4rem;
-				font-size:6rem;
+				font-size:4rem;
 				@include fontbaskvill;
-				line-height:6.5rem;
-				text-transform:normal;;
+				line-height:4.5rem;
+				text-transform:uppercase;
 				color:white;
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:3.3rem;
+					line-height:4rem;
+				}
 				@include media(767px){
 					font-size:3.5rem;
 					line-height:4rem;
 					margin-bottom:2.5rem
 				}
 				@include media(480px){
-					font-size:2.2rem;
+					font-size:1.8rem;
 					margin-bottom:2.8rem;
 					line-height:3rem;
 				}
@@ -80,6 +84,10 @@
 					background:$xanhduong2;
 					color:white;
 				}
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:1.3rem;
+					padding:5px 18px;
+				}
 				@include media(480px){
 					font-size:1.2rem;
 					padding:5px 18px;
@@ -88,6 +96,7 @@
 		}
 	}
 }
+
 body.page-level-2{
 	.header{
 		button.btn-wrap-menu{
@@ -142,6 +151,9 @@ body.page-level-2{
 	.title-container{
 		width:100%;
 		height:30rem;
+		@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+			height:25rem;
+		}
 		@include media(767px){
 			height:auto;
 		}
@@ -159,6 +171,9 @@ body.page-level-2{
 				color:$xanhduong;
 				text-transform:uppercase;
 				vertical-align:baseline;
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:2rem;
+				}
 				@include media(767px){
 					font-size:1.8rem;
 					margin-bottom:2.2rem;
@@ -187,6 +202,9 @@ body.page-level-2{
 		height:calc(100% - 30rem);
 		background:url('../images/agency/bg01.jpg')no-repeat;
 		background-size:cover;
+		@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+			height:calc(100% - 25rem);
+		}
 		@include media(767px){
 			height:auto;
 			min-height:400px;
@@ -196,10 +214,10 @@ body.page-level-2{
 			position:relative;
 			.wrap-content{
 				position:absolute;
-				top:12rem;
-				left:10rem;
-				max-width:45rem;
-				text-align:center;
+				top:4rem;
+				right:0rem;
+				max-width:70rem;
+				text-align:right;
 				@include media(767px){
 					position:static;
 					top:auto;
@@ -208,21 +226,28 @@ body.page-level-2{
 					padding:1rem 1.5rem;
 				}
 				p.big-text{
-					font-size:2.2rem;
-					margin-bottom:2rem;
+					font-size:2.8rem;
+					margin-bottom:0.8rem;
 					@include fontbase;
+					font-weight:bold;
 					color:white;
 					text-transform:uppercase;
+					@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+						font-size:2.3rem;
+					}
 					@include media(767px){
 						font-size:2rem;
-						margin-bottom:1.5rem;
+						margin-bottom:1rem;
 					}
 				}
 				p.small-text{
 					@include fontbaskvill;
-					font-size:1.7rem;
+					font-size:2.5rem;
 					color:white;
-					line-height:2.5rem;
+					line-height:3rem;
+					@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+						font-size:2rem;
+					}
 					@include media(767px){
 						font-size:1.5rem;
 						line-height:2.3rem;
@@ -244,6 +269,11 @@ body.page-level-2{
 			@include fontbaskvill;
 			margin-bottom:7rem;
 			text-transform:uppercase;
+			@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+				font-size:2.5rem;
+				line-height:3.2rem;
+				margin-bottom:5rem;
+			}
 			@include media(767px){
 				font-size:2.3rem;
 				line-height:3rem;
@@ -262,6 +292,10 @@ body.page-level-2{
 				line-height:2.8rem;
 				font-weight:600;
 				margin-bottom:2.5rem;
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:2.2rem;
+					margin-bottom:2.2rem;
+				}
 				@include media(767px){
 					font-size:2rem;
 					margin-bottom:1rem;
@@ -373,7 +407,7 @@ body.page-level-2{
 	margin-bottom:4rem;
 	@include media(767px){
 		padding-top:0;
-		
+
 	}
 	.title-container{
 		margin-bottom:3rem;
@@ -387,6 +421,9 @@ body.page-level-2{
 				color:$xanhduong;
 				text-transform:uppercase;
 				vertical-align:baseline;
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:2rem;
+				}
 				@include media(767px){
 					font-size:1.8rem;
 					margin-bottom:3rem;
@@ -414,8 +451,13 @@ body.page-level-2{
 				text-transform:capitalize;
 				color:$text01;
 				text-align:center;
+				margin-bottom:5rem;
 				@include fontbaskvill;
 				text-transform:uppercase;
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:2.5rem;
+					margin-bottom:5rem;
+				}
 				&.margin-bot{
 					margin-bottom:3rem;
 				}
@@ -423,6 +465,20 @@ body.page-level-2{
 						font-size:2rem;
 						line-height:2.6rem;
 					}
+			}
+			p.description{
+				font-size:2rem;
+				line-height:4rem;
+				@include fontbase;
+				max-width:80%;
+				margin:0 auto;
+				text-align:center;
+				margin-bottom:7rem;
+				color:$text01;
+				@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
+					font-size:1.8rem;
+					line-height:3.8rem;
+				}
 			}
 		}
 	}
