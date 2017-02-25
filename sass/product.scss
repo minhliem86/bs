@@ -1,5 +1,17 @@
 @import "_define";
 
+@mixin min_height($min-height,$max-height) {
+	@media screen and (min-height:$min-height) and (max-height:$max-height) and (min-width:900px){
+		@content;
+	}
+}
+
+@mixin min_width($min-width, $max-width) {
+	@media screen and (min-width:$min-width) and (max-width:$max-width){
+		@content;
+	}
+}
+
 body.page-level-2{
 	.header{
 		button.btn-wrap-menu{
@@ -46,7 +58,10 @@ body.page-level-2{
 .section{
 	width:100%;
 	height:100%;
-	@include media(767px){
+	@include min_height(350px, 650px){
+		height:auto;
+	};
+	@include min_width(320px, 480px){
 		height:auto;
 	}
 	h1.title, h2.title{
@@ -58,10 +73,7 @@ body.page-level-2{
 		color:$xanhduong;
 		text-transform:uppercase;
 		vertical-align:bottom;
-		@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
-			font-size:2rem;
-		}
-		@include media(767px){
+		@include min_width(320px, 480px){
 			font-size:1.8rem;
 			margin-bottom:3rem;
 		}
@@ -89,10 +101,8 @@ body.page-level-2{
 		color:$text01;
 		line-height:3rem;
 		text-transform:uppercase;
-		@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
-			font-size:2.5rem;
-		}
-		@include media(767px){
+
+		@include min_width(320px, 480px){
 			font-size:2rem;
 			line-height:2.6rem;
 		}
@@ -101,13 +111,18 @@ body.page-level-2{
 .section01{
 	.title-container{
 		height:35rem;
-
-		@include media(767px){
+		@include min_height(350px, 650px){
+			height:auto;
+		};
+		@include min_width(320px, 480px){
 			height:28rem;
 		}
 		.wrap-title	{
 			padding-top:20rem;
-			@include media(767px){
+			@include min_height(350px, 650px){
+				padding-bottom: 5rem;
+			};
+			@include min_width(320px, 480px){
 				padding-top:15rem;
 			}
 
@@ -118,7 +133,11 @@ body.page-level-2{
 		height:calc(100% - 35rem);
 		background:url('../images/product/bg-product.jpg')no-repeat;
 		background-size:cover;
-		@include media(767px){
+		@include min_height(350px, 650px){
+			height:auto;
+			min-height:350px;
+		};
+		@include min_width(320px, 480px){
 			height:auto;
 			min-height:30rem;
 		}
@@ -127,34 +146,32 @@ body.page-level-2{
 }
 .section02, .section03, .section04{
 	padding-top:14rem;
-	@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
-		padding-top:9rem;
-	}
-	@include media(767px){
+	@include min_height(350px, 650px){
+		padding-top:8rem;
+		padding-bottom: 4rem;
+	};
+	@include min_width(320px, 480px){
 		padding-top:6rem;
 	}
 	.title-container{
 		height:11rem;
 		margin-bottom:2rem;
-		@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
-			height:8rem;
-		}
+
 	}
 
 }
 .section04{
 	margin-bottom:9rem;
-	@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
-		margin-bottom:5rem;
-	}
+
 }
 .bottom-section{
 	width:100%;
 	height:calc(100% - 11rem);
-	@media screen and (min-height:600px) and (max-height:767px)  and (min-width:1199px){
-		height:calc(100% - 8rem);
-	}
-	@include media(767px){
+	@include min_height(350px, 650px){
+		height:auto;
+		height:650px;
+	};
+	@include min_width(320px, 480px){
 		height:40rem;
 	}
 	.fullheight{

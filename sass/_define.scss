@@ -1,8 +1,9 @@
 @import "../fonts/gothambook/font.css";
 @import "../fonts/baskvill/font.css";
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');
 
 @mixin fontbase{
-	font-family: 'GothamBook';
+	font-family: 'Nunito Sans', sans-serif;
 }
 @mixin fontbaskvill{
 	font-family: 'Baskerville Old Face';
@@ -14,6 +15,12 @@
 }
 @mixin media($width:767px){
 	@media screen and (max-width:$width){
+		@content;
+	}
+}
+
+@mixin min_width($min-width, $max-width) {
+	@media screen and (min-width:$min-width) and (max-width:$max-width){
 		@content;
 	}
 }
@@ -51,7 +58,7 @@ div.clear{
 	z-index:1000;
 	top:0;
 	left:0;
-	@include media(767px){
+	@include min_width(320px, 769px){
 		padding:1.5rem 1.5rem 0;
 	}
 	.wrap-header{
@@ -78,7 +85,7 @@ div.clear{
 				display:inline-block;
 				vertical-align: middle;
 				text-transform: uppercase;
-				@include media(480px){
+				@include min_width(320px, 480px){
 					font-size:1.5rem;
 				}
 			}
@@ -156,10 +163,7 @@ i.ic-scrolldown{
 		-webkit-animation:none;
 		-moz-animation:none;
 	}
-	@media screen and (max-width:650px) and (max-height:400px) and (orientation: landscape){
-		bottom:5%;
-	}
-	@include media(767px){
+	@include min_width(320px, 480px){
 		display: none;
 	}
 }
@@ -177,7 +181,7 @@ i.ic-scrolldown{
 		transform:translateY(-55%);
 		-webkit-transform:translateY(-55%);
 		-moz-transform:translateY(-55%);
-		@include media(767px){
+		@include min_width(320px, 769px){
 			margin: 0 auto 1rem;
 			position:static;
 			top:auto;
@@ -190,15 +194,10 @@ i.ic-scrolldown{
 		margin-top:1rem;
 		display: block;
 		text-align: center;
-		@include media(991px){
+		@include min_width(320px, 769px){
 			display:block;
 			text-align: center;
-			margin-top:0.5rem;
-			margin-bottom:2rem;
-		}
-		@include media(767px){
-			display:block;
-			text-align: center;
+			margin:0.7rem 0;
 		}
 		li{
 			display:inline-block;
@@ -220,25 +219,11 @@ i.ic-scrolldown{
 				background:url('../images/ic-text-footer.png')no-repeat;
 				@include transition(all 0.3s);
 			}
-			@include media(1199px){
-				margin-right:2rem;
-				padding:0;
-			}
-			@include media(991px){
-				margin-right:1.5rem;
+			@include min_width(320px, 769px){
+				padding:0 10px;
 				&:before{
 					display:none;
 				}
-			}
-			@include media(767px){
-				padding-left:0;
-				margin-right:1.3rem;
-				&:before{
-					display:none;
-				}
-			}
-			@include media(480px){
-				margin-right:0.5rem;
 			}
 			a{
 				display:block;
@@ -247,21 +232,17 @@ i.ic-scrolldown{
 				font-size:1.6rem;
 				@include fontbase;
 				@include transition(all 0.3s);
-
-				@include media(1199px){
+				@include min_width(481px, 769px){
 					font-size:1.4rem;
 				}
-				@include media(767px){
-					font-size:1.4rem;
-				}
-				@include media(480px){
+				@include min_width(320px, 480px){
 					font-size:1.2rem;
 				}
 			}
 			&:hover{
 				&:before{
 					background:url('../images/ic-text-footer-hover.png')no-repeat;
-					@include media(767px){
+					@include min_width(320px, 769px){
 						background:none;
 					}
 				}
@@ -279,17 +260,9 @@ i.ic-scrolldown{
 		position: absolute;
 		right:0;
 		top:0rem;
-
-		@include media(991px){
+		@include min_width(320px, 769px){
 			text-align:center;
 			position:static;
-		}
-		@include media(767px){
-			text-align:center;
-			position:static;
-		}
-		@include media(480px){
-
 		}
 	}
 }
@@ -300,7 +273,7 @@ i.ic-scrolldown{
 	background:$xanhduong-den;
 	img{
 		margin:0 auto;
-		@include media(480px){
+		@include min_width(320px, 480px){
 			transform:scale(0.8);
 			-webkit-transform:scale(0.8);
 			-moz-transform:scale(0.8);
@@ -322,9 +295,10 @@ i.ic-scrolldown{
 		text-align: center;
 		top: 50%;
 		height: 60%;
+		-moz-transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
-		@include media(480px){
+		@include min_width(320px, 480px){
 			width:80%;
 			top:60%;
 		}
@@ -334,13 +308,17 @@ i.ic-scrolldown{
 			display: inline-block;
 			height: 100%;
 			position: relative;
+			@include min_width(481px, 769px){
+				margin-top:3.5rem;
+			}
 			li{
 				display: block;
 				height: calc(100% / 8);
 				min-height: 2rem;
+				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				backface-visibility: hidden;
-				@include media(480px){
+				@include min_width(320px, 480px){
 					min-height:auto;
 					height:calc(100% / 10);
 				}
@@ -355,10 +333,10 @@ i.ic-scrolldown{
 					&:hover{
 						color:$xanhduong2;
 					}
-					@include media(767px){
-						font-size:2.5rem;
+					@include min_width(481px, 769px){
+						font-size:2rem;
 					}
-					@include media(480px){
+					@include min_width(320px, 480px){
 						font-size:1.6rem;
 					}
 				}
